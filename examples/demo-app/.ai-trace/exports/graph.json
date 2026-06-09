@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "id": "file:app/[locale]/blogs/[slug]/error.tsx",
+      "type": "file",
+      "label": "app/[locale]/blogs/[slug]/error.tsx",
+      "filePath": "app/[locale]/blogs/[slug]/error.tsx"
+    },
+    {
+      "id": "file:app/[locale]/blogs/[slug]/loading.tsx",
+      "type": "file",
+      "label": "app/[locale]/blogs/[slug]/loading.tsx",
+      "filePath": "app/[locale]/blogs/[slug]/loading.tsx"
+    },
+    {
+      "id": "file:app/[locale]/blogs/[slug]/page.tsx",
+      "type": "file",
+      "label": "app/[locale]/blogs/[slug]/page.tsx",
+      "filePath": "app/[locale]/blogs/[slug]/page.tsx"
+    },
+    {
+      "id": "file:components/blog/BlogContent.tsx",
+      "type": "file",
+      "label": "components/blog/BlogContent.tsx",
+      "filePath": "components/blog/BlogContent.tsx"
+    },
+    {
+      "id": "file:components/blog/BlogDetail.tsx",
+      "type": "file",
+      "label": "components/blog/BlogDetail.tsx",
+      "filePath": "components/blog/BlogDetail.tsx"
+    },
+    {
+      "id": "file:components/blog/BlogHeader.tsx",
+      "type": "file",
+      "label": "components/blog/BlogHeader.tsx",
+      "filePath": "components/blog/BlogHeader.tsx"
+    },
+    {
+      "id": "file:hooks/useRelatedPosts.ts",
+      "type": "file",
+      "label": "hooks/useRelatedPosts.ts",
+      "filePath": "hooks/useRelatedPosts.ts"
+    },
+    {
+      "id": "file:lib/blog/getBlogDetail.ts",
+      "type": "file",
+      "label": "lib/blog/getBlogDetail.ts",
+      "filePath": "lib/blog/getBlogDetail.ts"
+    },
+    {
+      "id": "component:ErrorPage",
+      "type": "component",
+      "label": "ErrorPage",
+      "filePath": "app/[locale]/blogs/[slug]/error.tsx"
+    },
+    {
+      "id": "component:Loading",
+      "type": "component",
+      "label": "Loading",
+      "filePath": "app/[locale]/blogs/[slug]/loading.tsx"
+    },
+    {
+      "id": "component:BlogDetailPage",
+      "type": "component",
+      "label": "BlogDetailPage",
+      "filePath": "app/[locale]/blogs/[slug]/page.tsx"
+    },
+    {
+      "id": "component:BlogContent",
+      "type": "component",
+      "label": "BlogContent",
+      "filePath": "components/blog/BlogContent.tsx"
+    },
+    {
+      "id": "component:BlogDetail",
+      "type": "component",
+      "label": "BlogDetail",
+      "filePath": "components/blog/BlogDetail.tsx"
+    },
+    {
+      "id": "component:BlogHeader",
+      "type": "component",
+      "label": "BlogHeader",
+      "filePath": "components/blog/BlogHeader.tsx"
+    },
+    {
+      "id": "hook:useRelatedPosts",
+      "type": "hook",
+      "label": "useRelatedPosts",
+      "filePath": "hooks/useRelatedPosts.ts"
+    },
+    {
+      "id": "service:getBlogDetail",
+      "type": "service",
+      "label": "getBlogDetail",
+      "filePath": "lib/blog/getBlogDetail.ts"
+    },
+    {
+      "id": "route:/[locale]/blogs/[slug]",
+      "type": "route",
+      "label": "/[locale]/blogs/[slug]",
+      "filePath": "app/[locale]/blogs/[slug]/page.tsx"
+    }
+  ],
+  "edges": [
+    {
+      "id": "file:app/[locale]/blogs/[slug]/page.tsx->file:../../../../components/blog/BlogDetail:imports",
+      "from": "file:app/[locale]/blogs/[slug]/page.tsx",
+      "to": "file:../../../../components/blog/BlogDetail",
+      "type": "imports"
+    },
+    {
+      "id": "file:app/[locale]/blogs/[slug]/page.tsx->file:../../../../lib/blog/getBlogDetail:imports",
+      "from": "file:app/[locale]/blogs/[slug]/page.tsx",
+      "to": "file:../../../../lib/blog/getBlogDetail",
+      "type": "imports"
+    },
+    {
+      "id": "file:components/blog/BlogDetail.tsx->file:./BlogHeader:imports",
+      "from": "file:components/blog/BlogDetail.tsx",
+      "to": "file:./BlogHeader",
+      "type": "imports"
+    },
+    {
+      "id": "file:components/blog/BlogDetail.tsx->file:./BlogContent:imports",
+      "from": "file:components/blog/BlogDetail.tsx",
+      "to": "file:./BlogContent",
+      "type": "imports"
+    },
+    {
+      "id": "file:components/blog/BlogDetail.tsx->file:../../hooks/useRelatedPosts:imports",
+      "from": "file:components/blog/BlogDetail.tsx",
+      "to": "file:../../hooks/useRelatedPosts",
+      "type": "imports"
+    },
+    {
+      "id": "component:BlogDetail->component:BlogContent:renders",
+      "from": "component:BlogDetail",
+      "to": "component:BlogContent",
+      "type": "renders"
+    },
+    {
+      "id": "file:hooks/useRelatedPosts.ts->file:../lib/blog/getBlogDetail:imports",
+      "from": "file:hooks/useRelatedPosts.ts",
+      "to": "file:../lib/blog/getBlogDetail",
+      "type": "imports"
+    },
+    {
+      "id": "route:/[locale]/blogs/[slug]->component:BlogDetail:routes_to",
+      "from": "route:/[locale]/blogs/[slug]",
+      "to": "component:BlogDetail",
+      "type": "routes_to"
+    }
+  ]
+}

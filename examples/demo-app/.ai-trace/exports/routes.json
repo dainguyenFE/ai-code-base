@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "id": "route:/[locale]/blogs/[slug]",
+      "path": "/[locale]/blogs/[slug]",
+      "pageFile": "app/[locale]/blogs/[slug]/page.tsx",
+      "layoutFiles": [],
+      "loadingFile": "app/[locale]/blogs/[slug]/loading.tsx",
+      "errorFile": "app/[locale]/blogs/[slug]/error.tsx"
+    }
+  ]
+}

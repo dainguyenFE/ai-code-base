@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+.ai-trace/cache/
+.ai-trace/snapshots/
+.ai-trace/trace-results/
+
+.next/
+coverage/

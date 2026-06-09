@@ -1,0 +1,23 @@
+{
+  "name": "ai-code-trace-agent",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Local AI code trace agent for tracking codebase flow",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "bun run scripts/build-all.ts",
+    "typecheck": "bun run scripts/typecheck-all.ts",
+    "ai-trace": "bun apps/cli/src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}

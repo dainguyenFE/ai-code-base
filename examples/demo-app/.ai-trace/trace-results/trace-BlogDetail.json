@@ -1,0 +1,76 @@
+{
+  "id": "trace_BlogDetail",
+  "query": "Trace BlogDetail",
+  "type": "component_trace",
+  "summary": "BlogDetail is a component in components/blog/BlogDetail.tsx.",
+  "entryPoints": [
+    "components/blog/BlogDetail.tsx"
+  ],
+  "relatedFiles": [
+    "components/blog/BlogDetail.tsx",
+    "app/[locale]/blogs/[slug]/page.tsx"
+  ],
+  "relatedSymbols": [
+    "component:BlogDetail",
+    "BlogHeader",
+    "BlogContent",
+    "useRelatedPosts"
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "component:BlogDetail",
+        "type": "component",
+        "label": "BlogDetail",
+        "filePath": "components/blog/BlogDetail.tsx"
+      }
+    ],
+    "edges": [
+      {
+        "id": "component:BlogDetail->component:BlogHeader:renders",
+        "from": "component:BlogDetail",
+        "to": "component:BlogHeader",
+        "type": "renders"
+      },
+      {
+        "id": "component:BlogDetail->component:BlogContent:renders",
+        "from": "component:BlogDetail",
+        "to": "component:BlogContent",
+        "type": "renders"
+      },
+      {
+        "id": "component:BlogDetail->hook:useRelatedPosts:uses_hook",
+        "from": "component:BlogDetail",
+        "to": "hook:useRelatedPosts",
+        "type": "uses_hook"
+      },
+      {
+        "id": "component:BlogDetail->hook:useRelatedPosts:calls",
+        "from": "component:BlogDetail",
+        "to": "hook:useRelatedPosts",
+        "type": "calls"
+      },
+      {
+        "id": "component:BlogDetailPage->component:BlogDetail:renders",
+        "from": "component:BlogDetailPage",
+        "to": "component:BlogDetail",
+        "type": "renders"
+      },
+      {
+        "id": "route:/[locale]/blogs/[slug]->component:BlogDetail:routes_to",
+        "from": "route:/[locale]/blogs/[slug]",
+        "to": "component:BlogDetail",
+        "type": "routes_to"
+      }
+    ]
+  },
+  "steps": [
+    "Entry: components/blog/BlogDetail.tsx",
+    "Props: post",
+    "Renders: BlogHeader, BlogContent",
+    "Uses hooks: useRelatedPosts",
+    "Used by routes: app/[locale]/blogs/[slug]/page.tsx"
+  ],
+  "warnings": [],
+  "createdAt": "2026-06-09T03:27:10.373Z"
+}

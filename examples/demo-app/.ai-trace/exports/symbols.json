@@ -1,0 +1,104 @@
+{
+  "symbols": [
+    {
+      "id": "component:ErrorPage",
+      "name": "ErrorPage",
+      "type": "component",
+      "file": "app/[locale]/blogs/[slug]/error.tsx",
+      "startLine": 3,
+      "endLine": 5,
+      "props": [],
+      "renders": [],
+      "usesHooks": []
+    },
+    {
+      "id": "component:Loading",
+      "name": "Loading",
+      "type": "component",
+      "file": "app/[locale]/blogs/[slug]/loading.tsx",
+      "startLine": 1,
+      "endLine": 3,
+      "props": [],
+      "renders": [],
+      "usesHooks": []
+    },
+    {
+      "id": "component:BlogDetailPage",
+      "name": "BlogDetailPage",
+      "type": "component",
+      "file": "app/[locale]/blogs/[slug]/page.tsx",
+      "startLine": 8,
+      "endLine": 14,
+      "props": [
+        "params"
+      ],
+      "renders": [
+        "BlogDetail"
+      ],
+      "usesHooks": []
+    },
+    {
+      "id": "component:BlogContent",
+      "name": "BlogContent",
+      "type": "component",
+      "file": "components/blog/BlogContent.tsx",
+      "startLine": 6,
+      "endLine": 13,
+      "props": [
+        "content",
+        "related"
+      ],
+      "renders": [],
+      "usesHooks": []
+    },
+    {
+      "id": "component:BlogDetail",
+      "name": "BlogDetail",
+      "type": "component",
+      "file": "components/blog/BlogDetail.tsx",
+      "startLine": 13,
+      "endLine": 22,
+      "props": [
+        "post"
+      ],
+      "renders": [
+        "BlogHeader",
+        "BlogContent"
+      ],
+      "usesHooks": [
+        "useRelatedPosts"
+      ]
+    },
+    {
+      "id": "component:BlogHeader",
+      "name": "BlogHeader",
+      "type": "component",
+      "file": "components/blog/BlogHeader.tsx",
+      "startLine": 5,
+      "endLine": 7,
+      "props": [
+        "title"
+      ],
+      "renders": [],
+      "usesHooks": []
+    },
+    {
+      "id": "hook:useRelatedPosts",
+      "name": "useRelatedPosts",
+      "type": "hook",
+      "file": "hooks/useRelatedPosts.ts",
+      "startLine": 3,
+      "endLine": 6,
+      "usesHooks": []
+    },
+    {
+      "id": "service:getBlogDetail",
+      "name": "getBlogDetail",
+      "type": "service",
+      "file": "lib/blog/getBlogDetail.ts",
+      "startLine": 7,
+      "endLine": 13,
+      "usesHooks": []
+    }
+  ]
+}

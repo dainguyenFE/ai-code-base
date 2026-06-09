@@ -1,0 +1,26 @@
+{
+  "name": "@ai-trace/cli",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "ai-trace": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-trace/agent": "workspace:*",
+    "@ai-trace/cache": "workspace:*",
+    "@ai-trace/config": "workspace:*",
+    "@ai-trace/exporter": "workspace:*",
+    "@ai-trace/graph": "workspace:*",
+    "@ai-trace/parser": "workspace:*",
+    "@ai-trace/scanner": "workspace:*",
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
