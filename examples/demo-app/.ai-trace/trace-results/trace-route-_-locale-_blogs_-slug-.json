@@ -1,31 +1,304 @@
 {
+  "createdAt": "2026-06-09T17:16:09.854Z",
+  "entryPoints": ["app/[locale]/blogs/[slug]/page.tsx"],
+  "graph": {
+    "edges": [
+      {
+        "from": "route:/[locale]/blogs/[slug]",
+        "id": "route:/[locale]/blogs/[slug]->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "component:RootLayout@app/layout.tsx",
+        "id": "component:RootLayout@app/layout.tsx->component:LocaleLayout@app/[locale]/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:Loading@app/[locale]/blogs/[slug]/loading.tsx:shows_loading",
+        "metadata": {
+          "boundary": "suspense"
+        },
+        "to": "component:Loading@app/[locale]/blogs/[slug]/loading.tsx",
+        "type": "shows_loading"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:ErrorPage@app/[locale]/blogs/[slug]/error.tsx:shows_error",
+        "metadata": {
+          "boundary": "error"
+        },
+        "to": "component:ErrorPage@app/[locale]/blogs/[slug]/error.tsx",
+        "type": "shows_error"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx",
+        "id": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx->component:BlogDetail@components/blog/BlogDetail.tsx:renders",
+        "to": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx",
+        "id": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx->component:BlogDetail@components/blog/BlogDetail.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "post",
+              "value": "{post}"
+            }
+          ],
+          "props": "post={post}",
+          "target": "BlogDetail"
+        },
+        "to": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "id": "component:BlogDetail@components/blog/BlogDetail.tsx->component:BlogHeader@components/blog/BlogHeader.tsx:renders",
+        "to": "component:BlogHeader@components/blog/BlogHeader.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "id": "component:BlogDetail@components/blog/BlogDetail.tsx->component:BlogContent@components/blog/BlogContent.tsx:renders",
+        "to": "component:BlogContent@components/blog/BlogContent.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "id": "component:BlogDetail@components/blog/BlogDetail.tsx->component:BlogHeader@components/blog/BlogHeader.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "title",
+              "value": "{post.title}"
+            }
+          ],
+          "props": "title={post.title}",
+          "target": "BlogHeader"
+        },
+        "to": "component:BlogHeader@components/blog/BlogHeader.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "id": "component:BlogDetail@components/blog/BlogDetail.tsx->component:BlogContent@components/blog/BlogContent.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "content",
+              "value": "{post.content}"
+            },
+            {
+              "name": "related",
+              "value": "{related}"
+            }
+          ],
+          "props": "content={post.content}, related={related}",
+          "target": "BlogContent"
+        },
+        "to": "component:BlogContent@components/blog/BlogContent.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "id": "component:BlogDetail@components/blog/BlogDetail.tsx->hook:useRelatedPosts@hooks/useRelatedPosts.ts:uses_hook",
+        "to": "hook:useRelatedPosts@hooks/useRelatedPosts.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useRelatedPosts@hooks/useRelatedPosts.ts",
+        "id": "hook:useRelatedPosts@hooks/useRelatedPosts.ts->component:BlogContent@components/blog/BlogContent.tsx:prop_source:related:19",
+        "metadata": {
+          "callee": "useRelatedPosts",
+          "jsxValue": "{related}",
+          "line": 19,
+          "passedFrom": "component:BlogDetail@components/blog/BlogDetail.tsx",
+          "propName": "related",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useRelatedPosts",
+                "children": [
+                  {
+                    "callee": "useRelatedPosts",
+                    "expression": "useRelatedPosts",
+                    "kind": "hook_call",
+                    "line": 14,
+                    "name": "useRelatedPosts"
+                  },
+                  {
+                    "children": [
+                      {
+                        "expression": "post",
+                        "kind": "destructure",
+                        "line": 13,
+                        "name": "post"
+                      }
+                    ],
+                    "expression": "post.category",
+                    "kind": "member",
+                    "line": 14,
+                    "name": "category",
+                    "property": "category"
+                  }
+                ],
+                "expression": "useRelatedPosts(post.category)",
+                "kind": "hook_call",
+                "line": 14,
+                "name": "useRelatedPosts"
+              }
+            ],
+            "expression": "useRelatedPosts(post.category)",
+            "kind": "identifier",
+            "line": 14,
+            "name": "related"
+          },
+          "targetComponent": "BlogContent"
+        },
+        "to": "component:BlogContent@components/blog/BlogContent.tsx",
+        "type": "prop_source"
+      }
+    ],
+    "nodes": [
+      {
+        "filePath": "app/[locale]/blogs/[slug]/error.tsx",
+        "id": "component:ErrorPage@app/[locale]/blogs/[slug]/error.tsx",
+        "label": "ErrorPage",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/blogs/[slug]/loading.tsx",
+        "id": "component:Loading@app/[locale]/blogs/[slug]/loading.tsx",
+        "label": "Loading",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/blogs/[slug]/page.tsx",
+        "id": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx",
+        "label": "BlogDetailPage",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "label": "LocaleLayout",
+        "type": "component"
+      },
+      {
+        "filePath": "app/layout.tsx",
+        "id": "component:RootLayout@app/layout.tsx",
+        "label": "RootLayout",
+        "type": "component"
+      },
+      {
+        "filePath": "components/blog/BlogContent.tsx",
+        "id": "component:BlogContent@components/blog/BlogContent.tsx",
+        "label": "BlogContent",
+        "type": "component"
+      },
+      {
+        "filePath": "components/blog/BlogDetail.tsx",
+        "id": "component:BlogDetail@components/blog/BlogDetail.tsx",
+        "label": "BlogDetail",
+        "type": "component"
+      },
+      {
+        "filePath": "components/blog/BlogHeader.tsx",
+        "id": "component:BlogHeader@components/blog/BlogHeader.tsx",
+        "label": "BlogHeader",
+        "type": "component"
+      },
+      {
+        "filePath": "hooks/useRelatedPosts.ts",
+        "id": "hook:useRelatedPosts@hooks/useRelatedPosts.ts",
+        "label": "useRelatedPosts",
+        "type": "hook"
+      },
+      {
+        "filePath": "app/[locale]/blogs/[slug]/page.tsx",
+        "id": "route:/[locale]/blogs/[slug]",
+        "label": "/[locale]/blogs/[slug]",
+        "type": "route"
+      }
+    ]
+  },
   "id": "trace_route_/[locale]/blogs/[slug]",
   "query": "Trace route /[locale]/blogs/[slug]",
-  "type": "route_trace",
-  "summary": "Route /[locale]/blogs/[slug] maps to app/[locale]/blogs/[slug]/page.tsx.",
-  "entryPoints": [
-    "app/[locale]/blogs/[slug]/page.tsx"
-  ],
   "relatedFiles": [
-    "app/[locale]/blogs/[slug]/page.tsx",
+    "app/[locale]/blogs/[slug]/error.tsx",
     "app/[locale]/blogs/[slug]/loading.tsx",
-    "app/[locale]/blogs/[slug]/error.tsx"
+    "app/[locale]/blogs/[slug]/page.tsx",
+    "components/blog/BlogDetail.tsx",
+    "hooks/useRelatedPosts.ts"
   ],
-  "relatedSymbols": [
-    "BlogDetail"
-  ],
-  "graph": {
-    "nodes": [],
-    "edges": []
+  "relatedSymbols": ["BlogDetailPage", "BlogDetail", "BlogDetail"],
+  "sections": {
+    "boundary": ["boundary: server component (default RSC)"],
+    "entry": [
+      "path: /[locale]/blogs/[slug]",
+      "page: app/[locale]/blogs/[slug]/page.tsx",
+      "page components: BlogDetailPage (app/[locale]/blogs/[slug]/page.tsx:8-16)"
+    ],
+    "hooks": [
+      "useRelatedPosts (hooks/useRelatedPosts.ts:3-6)",
+      "  calls: getBlogDetail"
+    ],
+    "layouts": [
+      "app/layout.tsx → RootLayout",
+      "app/[locale]/layout.tsx → LocaleLayout",
+      "loading: app/[locale]/blogs/[slug]/loading.tsx",
+      "error: app/[locale]/blogs/[slug]/error.tsx"
+    ],
+    "propsPassed": [
+      "BlogDetail ← post={post}",
+      "BlogHeader ← title={post.title}",
+      "BlogContent ← content={post.content}, related={related}"
+    ],
+    "related": [
+      "app/[locale]/blogs/[slug]/error.tsx",
+      "app/[locale]/blogs/[slug]/loading.tsx",
+      "app/[locale]/blogs/[slug]/page.tsx",
+      "components/blog/BlogDetail.tsx",
+      "hooks/useRelatedPosts.ts"
+    ],
+    "renderTree": [
+      "BlogDetailPage (app/[locale]/blogs/[slug]/page.tsx:8-16)",
+      "└── BlogDetail (components/blog/BlogDetail.tsx:13-22)",
+      "    ├── BlogHeader (components/blog/BlogHeader.tsx:5-11)",
+      "    └── BlogContent (components/blog/BlogContent.tsx:6-13)"
+    ],
+    "route": ["/[locale]/blogs/[slug] → app/[locale]/blogs/[slug]/page.tsx"],
+    "usage": ["entry components: BlogDetail", "layout wrappers: 2"]
   },
   "steps": [
     "Route: /[locale]/blogs/[slug]",
     "Page: app/[locale]/blogs/[slug]/page.tsx",
-    "Layouts: none",
+    "Layouts: app/layout.tsx, app/[locale]/layout.tsx",
     "Loading: app/[locale]/blogs/[slug]/loading.tsx",
     "Error: app/[locale]/blogs/[slug]/error.tsx",
-    "Renders: BlogDetail"
+    "Renders: BlogDetail",
+    "Routes to: BlogDetail"
   ],
-  "warnings": [],
-  "createdAt": "2026-06-09T03:24:26.734Z"
+  "summary": "Route /[locale]/blogs/[slug] maps to app/[locale]/blogs/[slug]/page.tsx with 2 nested layout(s) and 1 rendered component target(s).",
+  "type": "route_trace",
+  "warnings": []
 }

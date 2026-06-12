@@ -549,14 +549,7 @@ Ví dụ:
   "framework": "nextjs",
   "router": "app-router",
   "sourceRoots": ["app", "components", "hooks", "lib", "features", "packages"],
-  "ignore": [
-    "node_modules",
-    ".next",
-    "dist",
-    "build",
-    "coverage",
-    ".turbo"
-  ],
+  "ignore": ["node_modules", ".next", "dist", "build", "coverage", ".turbo"],
   "cacheDir": ".ai-trace/cache",
   "exportDir": ".ai-trace/exports",
   "indexVersion": "v1"
@@ -1092,10 +1085,7 @@ Danh sách route.
     {
       "path": "/[locale]/blogs/[slug]",
       "page": "app/[locale]/blogs/[slug]/page.tsx",
-      "layouts": [
-        "app/layout.tsx",
-        "app/[locale]/layout.tsx"
-      ],
+      "layouts": ["app/layout.tsx", "app/[locale]/layout.tsx"],
       "loading": "app/[locale]/blogs/[slug]/loading.tsx",
       "error": "app/[locale]/blogs/[slug]/error.tsx"
     }

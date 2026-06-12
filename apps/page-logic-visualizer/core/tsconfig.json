@@ -1,0 +1,9 @@
+{
+  "extends": "@cs/tsconfig/base.json",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "types": ["bun", "node"]
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.md"]
+}

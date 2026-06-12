@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS files (
   hash TEXT NOT NULL,
   is_client_component INTEGER DEFAULT 0,
   is_server_component INTEGER DEFAULT 0,
+  parsed_json TEXT,
   updated_at TEXT
 );
 

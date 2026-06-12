@@ -1,24 +1,40 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
-import { z } from "zod";
+
 import type { TraceConfig } from "@ai-trace/types";
+import { z } from "zod";
+
 import { createDefaultConfig } from "./createDefaultConfig.js";
 
+const aiConfigSchema = z
+  .object({
+    baseUrl: z.string().optional(),
+    enabled: z.boolean(),
+    maxContextFiles: z.number().int().positive(),
+    maxGraphDepth: z.number().int().positive(),
+    model: z.string(),
+    provider: z.enum(["openai", "ollama"]),
+    saveTraceResult: z.boolean(),
+    temperature: z.number().min(0).max(2),
+  })
+  .optional();
+
 const configSchema = z.object({
-  projectName: z.string(),
+  ai: aiConfigSchema,
+  cacheDir: z.string(),
+  db: z.object({
+    path: z.string(),
+    type: z.literal("sqlite"),
+  }),
+  exportDir: z.string(),
   framework: z.enum(["nextjs", "react", "unknown"]),
+  ignore: z.array(z.string()),
+  indexVersion: z.string(),
+  projectName: z.string(),
   router: z.enum(["app-router", "pages-router", "unknown"]).optional(),
   sourceRoots: z.array(z.string()).min(1),
-  ignore: z.array(z.string()),
-  cacheDir: z.string(),
-  exportDir: z.string(),
   traceResultDir: z.string(),
-  indexVersion: z.string(),
-  db: z.object({
-    type: z.literal("sqlite"),
-    path: z.string(),
-  }),
 });
 
 export const CONFIG_PATH = ".ai-trace/config.json";
@@ -37,11 +53,11 @@ export function resolveConfigPaths(
 ): ResolvedConfig {
   return {
     ...config,
-    rootDir,
     absoluteCacheDir: path.resolve(rootDir, config.cacheDir),
+    absoluteDbPath: path.resolve(rootDir, config.db.path),
     absoluteExportDir: path.resolve(rootDir, config.exportDir),
     absoluteTraceResultDir: path.resolve(rootDir, config.traceResultDir),
-    absoluteDbPath: path.resolve(rootDir, config.db.path),
+    rootDir,
   };
 }
 
@@ -70,6 +86,6 @@ export async function initConfig(rootDir: string): Promise<string> {
   await mkdir(configDir, { recursive: true });
   const projectName = path.basename(rootDir);
   const config = createDefaultConfig(projectName);
-  await writeFile(configPath, JSON.stringify(config, null, 2) + "\n", "utf-8");
+  await writeFile(configPath, `${JSON.stringify(config, null, 2)}\n`, "utf-8");
   return configPath;
 }

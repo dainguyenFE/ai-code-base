@@ -1,0 +1,21 @@
+{
+  "createdAt": "2026-06-09T08:07:51.355Z",
+  "entryPoints": ["app/dashboard/page.tsx"],
+  "graph": {
+    "edges": [],
+    "nodes": []
+  },
+  "id": "trace_route_/dashboard",
+  "query": "Trace route /dashboard",
+  "relatedFiles": ["app/dashboard/page.tsx", "app/dashboard/layout.tsx"],
+  "relatedSymbols": ["DashboardShell"],
+  "steps": [
+    "Route: /dashboard",
+    "Page: app/dashboard/page.tsx",
+    "Layouts: app/dashboard/layout.tsx",
+    "Renders: DashboardShell"
+  ],
+  "summary": "Route /dashboard maps to app/dashboard/page.tsx.",
+  "type": "route_trace",
+  "warnings": []
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": "2026-06-09T08:07:51.147Z",
+  "entryPoints": ["hooks/useDashboardData.ts"],
+  "graph": {
+    "edges": [
+      {
+        "id": "hook:useDashboardData->hook:useCounter:uses_hook",
+        "from": "hook:useDashboardData",
+        "to": "hook:useCounter",
+        "type": "uses_hook"
+      },
+      {
+        "id": "hook:useDashboardData->hook:useToggle:uses_hook",
+        "from": "hook:useDashboardData",
+        "to": "hook:useToggle",
+        "type": "uses_hook"
+      },
+      {
+        "id": "hook:useDashboardData->service:getStats:calls",
+        "from": "hook:useDashboardData",
+        "to": "service:getStats",
+        "type": "calls"
+      },
+      {
+        "id": "hook:useDashboardData->hook:useCounter:calls",
+        "from": "hook:useDashboardData",
+        "to": "hook:useCounter",
+        "type": "calls"
+      },
+      {
+        "id": "hook:useDashboardData->hook:useToggle:calls",
+        "from": "hook:useDashboardData",
+        "to": "hook:useToggle",
+        "type": "calls"
+      },
+      {
+        "id": "component:DashboardShell->hook:useDashboardData:uses_hook",
+        "from": "component:DashboardShell",
+        "to": "hook:useDashboardData",
+        "type": "uses_hook"
+      },
+      {
+        "id": "component:DashboardShell->hook:useDashboardData:calls",
+        "from": "component:DashboardShell",
+        "to": "hook:useDashboardData",
+        "type": "calls"
+      }
+    ],
+    "nodes": []
+  },
+  "id": "trace_hook_useDashboardData",
+  "query": "Trace hook useDashboardData",
+  "relatedFiles": ["hooks/useDashboardData.ts"],
+  "relatedSymbols": ["hook:useDashboardData", "DashboardShell"],
+  "steps": [
+    "Hook: useDashboardData",
+    "File: hooks/useDashboardData.ts",
+    "Calls: getStats, useCounter, useToggle",
+    "Uses hooks: useCounter, useToggle",
+    "Used by: DashboardShell"
+  ],
+  "summary": "useDashboardData is a hook in hooks/useDashboardData.ts.",
+  "type": "hook_trace",
+  "warnings": []
+}

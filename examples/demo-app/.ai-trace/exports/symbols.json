@@ -1,103 +1,690 @@
 {
   "symbols": [
     {
-      "id": "component:ErrorPage",
-      "name": "ErrorPage",
-      "type": "component",
-      "file": "app/[locale]/blogs/[slug]/error.tsx",
-      "startLine": 3,
       "endLine": 5,
+      "file": "app/[locale]/blogs/[slug]/error.tsx",
+      "id": "component:ErrorPage@app/[locale]/blogs/[slug]/error.tsx",
+      "name": "ErrorPage",
       "props": [],
-      "renders": [],
+      "startLine": 3,
+      "type": "component",
       "usesHooks": []
     },
     {
-      "id": "component:Loading",
-      "name": "Loading",
-      "type": "component",
-      "file": "app/[locale]/blogs/[slug]/loading.tsx",
-      "startLine": 1,
       "endLine": 3,
+      "file": "app/[locale]/blogs/[slug]/loading.tsx",
+      "id": "component:Loading@app/[locale]/blogs/[slug]/loading.tsx",
+      "name": "Loading",
       "props": [],
-      "renders": [],
+      "startLine": 1,
+      "type": "component",
       "usesHooks": []
     },
     {
-      "id": "component:BlogDetailPage",
-      "name": "BlogDetailPage",
-      "type": "component",
+      "endLine": 16,
       "file": "app/[locale]/blogs/[slug]/page.tsx",
+      "id": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx",
+      "name": "BlogDetailPage",
+      "props": ["params"],
+      "renders": ["BlogDetail"],
       "startLine": 8,
-      "endLine": 14,
-      "props": [
-        "params"
-      ],
-      "renders": [
-        "BlogDetail"
-      ],
+      "type": "component",
       "usesHooks": []
     },
     {
-      "id": "component:BlogContent",
-      "name": "BlogContent",
-      "type": "component",
-      "file": "components/blog/BlogContent.tsx",
-      "startLine": 6,
       "endLine": 13,
-      "props": [
-        "content",
-        "related"
-      ],
-      "renders": [],
+      "file": "app/[locale]/layout.tsx",
+      "id": "component:LocaleLayout@app/[locale]/layout.tsx",
+      "name": "LocaleLayout",
+      "props": ["children", "params"],
+      "startLine": 7,
+      "type": "component",
       "usesHooks": []
     },
     {
-      "id": "component:BlogDetail",
-      "name": "BlogDetail",
-      "type": "component",
-      "file": "components/blog/BlogDetail.tsx",
-      "startLine": 13,
       "endLine": 22,
-      "props": [
-        "post"
-      ],
-      "renders": [
-        "BlogHeader",
-        "BlogContent"
-      ],
+      "file": "app/[locale]/page.tsx",
+      "id": "component:LocaleHomePage@app/[locale]/page.tsx",
+      "name": "LocaleHomePage",
+      "props": ["params"],
+      "renders": ["InfoCard"],
+      "startLine": 8,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 27,
+      "file": "app/[locale]/studio/[projectId]/layout.tsx",
+      "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+      "name": "ProjectLayout",
+      "props": ["children", "params"],
+      "renders": ["WorkspaceProvider"],
+      "startLine": 10,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 11,
+      "file": "app/[locale]/studio/[projectId]/loading.tsx",
+      "id": "component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx",
+      "name": "ProjectLoading",
+      "props": [],
+      "renders": ["Skeleton"],
+      "startLine": 4,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 17,
+      "file": "app/[locale]/studio/[projectId]/page.tsx",
+      "id": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+      "name": "ProjectPage",
+      "props": ["params"],
+      "renders": ["StudioProjectView"],
+      "startLine": 9,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 19,
+      "file": "app/[locale]/studio/error.tsx",
+      "id": "component:StudioError@app/[locale]/studio/error.tsx",
+      "name": "StudioError",
+      "props": ["error", "reset"],
+      "renders": ["Button"],
+      "startLine": 11,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 14,
+      "file": "app/[locale]/studio/layout.tsx",
+      "id": "component:StudioLayout@app/[locale]/studio/layout.tsx",
+      "name": "StudioLayout",
+      "props": ["children", "params"],
+      "startLine": 7,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 12,
+      "file": "app/[locale]/studio/loading.tsx",
+      "id": "component:StudioLoading@app/[locale]/studio/loading.tsx",
+      "name": "StudioLoading",
+      "props": [],
+      "renders": ["Skeleton"],
+      "startLine": 4,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 13,
+      "file": "app/[locale]/studio/page.tsx",
+      "id": "component:StudioPage@app/[locale]/studio/page.tsx",
+      "name": "StudioPage",
+      "props": ["params"],
+      "renders": ["CreativeStudioHome"],
+      "startLine": 9,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 8,
+      "file": "app/[locale]/studio/template.tsx",
+      "id": "component:StudioTemplate@app/[locale]/studio/template.tsx",
+      "name": "StudioTemplate",
+      "props": ["children"],
+      "startLine": 6,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 10,
+      "file": "app/about/page.tsx",
+      "id": "component:AboutPage@app/about/page.tsx",
+      "name": "AboutPage",
+      "props": [],
+      "renders": ["InfoCard"],
+      "startLine": 4,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 13,
+      "file": "app/dashboard/layout.tsx",
+      "id": "component:DashboardLayout@app/dashboard/layout.tsx",
+      "name": "DashboardLayout",
+      "props": ["children"],
+      "startLine": 6,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 16,
+      "file": "app/dashboard/page.tsx",
+      "id": "component:DashboardPage@app/dashboard/page.tsx",
+      "name": "DashboardPage",
+      "props": [],
+      "renders": ["DashboardShell"],
+      "startLine": 10,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 7,
+      "file": "app/dashboard/page.tsx",
+      "id": "function:DashboardShell@app/dashboard/page.tsx",
+      "name": "DashboardShell",
+      "startLine": 3,
+      "type": "function",
+      "usesHooks": []
+    },
+    {
+      "endLine": 17,
+      "file": "app/dashboard/settings/page.tsx",
+      "id": "component:SettingsPage@app/dashboard/settings/page.tsx",
+      "name": "SettingsPage",
+      "props": [],
+      "startLine": 6,
+      "type": "component",
+      "usesHooks": ["useToggle"]
+    },
+    {
+      "endLine": 11,
+      "file": "app/layout.tsx",
+      "id": "component:RootLayout@app/layout.tsx",
+      "name": "RootLayout",
+      "props": ["children"],
+      "startLine": 5,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 14,
+      "file": "app/page.tsx",
+      "id": "component:HomePage@app/page.tsx",
+      "name": "HomePage",
+      "props": [],
+      "renders": ["Badge", "Button"],
+      "startLine": 5,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 13,
+      "file": "components/blog/BlogContent.tsx",
+      "id": "component:BlogContent@components/blog/BlogContent.tsx",
+      "name": "BlogContent",
+      "props": ["content", "related"],
+      "startLine": 6,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 22,
+      "file": "components/blog/BlogDetail.tsx",
+      "id": "component:BlogDetail@components/blog/BlogDetail.tsx",
+      "name": "BlogDetail",
+      "props": ["post"],
+      "renders": ["BlogHeader", "BlogContent"],
+      "startLine": 13,
+      "type": "component",
+      "usesHooks": ["useRelatedPosts"]
+    },
+    {
+      "endLine": 11,
+      "file": "components/blog/BlogHeader.tsx",
+      "id": "component:BlogHeader@components/blog/BlogHeader.tsx",
+      "name": "BlogHeader",
+      "props": ["title"],
+      "startLine": 5,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 18,
+      "file": "components/cards/InfoCard.tsx",
+      "id": "component:InfoCard@components/cards/InfoCard.tsx",
+      "name": "InfoCard",
+      "props": ["title", "badge"],
+      "renders": ["Icon", "Badge"],
+      "startLine": 10,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 21,
+      "file": "components/dashboard/DashboardShell.tsx",
+      "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+      "name": "DashboardShell",
+      "props": [],
+      "renders": ["InfoCard", "DashboardStats"],
+      "startLine": 6,
+      "type": "component",
+      "usesHooks": ["useDashboardData"]
+    },
+    {
+      "endLine": 32,
+      "file": "components/dashboard/DashboardStats.tsx",
+      "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+      "name": "DashboardStats",
+      "props": ["stats"],
+      "renders": ["StatTile"],
+      "startLine": 10,
+      "type": "component",
+      "usesHooks": ["useCounter"]
+    },
+    {
+      "endLine": 20,
+      "file": "components/dashboard/StatTile.tsx",
+      "id": "component:StatTile@components/dashboard/StatTile.tsx",
+      "name": "StatTile",
+      "props": ["label", "value"],
+      "renders": ["Badge"],
+      "startLine": 10,
+      "type": "component",
+      "usesHooks": ["useToggle"]
+    },
+    {
+      "endLine": 8,
+      "file": "components/primitives/Badge.tsx",
+      "id": "component:Badge@components/primitives/Badge.tsx",
+      "name": "Badge",
+      "props": ["label"],
+      "startLine": 6,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 32,
+      "file": "components/primitives/Icon.tsx",
+      "id": "component:Icon@components/primitives/Icon.tsx",
+      "name": "Icon",
+      "props": ["name"],
+      "startLine": 6,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 15,
+      "file": "components/ui/badge.tsx",
+      "id": "component:Badge@components/ui/badge.tsx",
+      "name": "Badge",
+      "props": ["children", "variant", "props"],
+      "startLine": 9,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 27,
+      "file": "components/ui/button.tsx",
+      "id": "component:Button@components/ui/button.tsx",
+      "name": "Button",
+      "props": ["children", "variant", "size", "props"],
+      "startLine": 10,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 14,
+      "file": "components/ui/card.tsx",
+      "id": "component:Card@components/ui/card.tsx",
+      "name": "Card",
+      "props": ["children", "className", "props"],
+      "startLine": 4,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 25,
+      "file": "components/ui/card.tsx",
+      "id": "component:CardHeader@components/ui/card.tsx",
+      "name": "CardHeader",
+      "props": ["children", "props"],
+      "startLine": 16,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 36,
+      "file": "components/ui/card.tsx",
+      "id": "component:CardTitle@components/ui/card.tsx",
+      "name": "CardTitle",
+      "props": ["children", "props"],
+      "startLine": 27,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 47,
+      "file": "components/ui/card.tsx",
+      "id": "component:CardContent@components/ui/card.tsx",
+      "name": "CardContent",
+      "props": ["children", "props"],
+      "startLine": 38,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 6,
+      "file": "components/ui/separator.tsx",
+      "id": "component:Separator@components/ui/separator.tsx",
+      "name": "Separator",
+      "props": ["props"],
+      "startLine": 4,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 9,
+      "file": "components/ui/skeleton.tsx",
+      "id": "component:Skeleton@components/ui/skeleton.tsx",
+      "name": "Skeleton",
+      "props": ["className", "props"],
+      "startLine": 4,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 53,
+      "file": "context/WorkspaceProvider.tsx",
+      "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+      "name": "WorkspaceProvider",
+      "props": ["children", "locale", "projectId", "projectName"],
+      "renders": ["WorkspaceContext"],
+      "startLine": 27,
+      "type": "component",
+      "usesHooks": ["useWorkspaceStore", "useCallback", "useMemo"]
+    },
+    {
+      "endLine": 63,
+      "file": "context/WorkspaceProvider.tsx",
+      "id": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+      "name": "useWorkspaceContext",
+      "startLine": 55,
+      "type": "hook",
+      "usesHooks": []
+    },
+    {
+      "endLine": 17,
+      "file": "context/WorkspaceProvider.tsx",
+      "id": "function:WorkspaceContext@context/WorkspaceProvider.tsx",
+      "name": "WorkspaceContext",
+      "startLine": 17,
+      "type": "function",
+      "usesHooks": []
+    },
+    {
+      "endLine": 27,
+      "file": "features/creative-studio/CreativeStudioHome.tsx",
+      "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+      "name": "CreativeStudioHome",
+      "props": ["locale", "projects"],
+      "renders": ["Button", "Separator", "ProjectGrid"],
+      "startLine": 12,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 54,
+      "file": "features/creative-studio/LayerItem.tsx",
+      "id": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+      "name": "LayerItem",
+      "renders": ["Badge", "Button"],
+      "startLine": 18,
+      "type": "function",
+      "usesHooks": ["useCallback"]
+    },
+    {
+      "endLine": 44,
+      "file": "features/creative-studio/LayerList.tsx",
+      "id": "component:LayerList@features/creative-studio/LayerList.tsx",
+      "name": "LayerList",
+      "props": [],
+      "renders": ["Button", "Separator", "LayerItem"],
+      "startLine": 12,
+      "type": "component",
+      "usesHooks": ["useWorkspaceStore", "useLayerSelection", "useCallback"]
+    },
+    {
+      "endLine": 32,
+      "file": "features/creative-studio/ProjectCard.tsx",
+      "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+      "name": "ProjectCard",
+      "renders": ["Card", "CardHeader", "CardTitle", "Badge", "CardContent"],
+      "startLine": 20,
+      "type": "function",
+      "usesHooks": []
+    },
+    {
+      "endLine": 21,
+      "file": "features/creative-studio/ProjectGrid.tsx",
+      "id": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+      "name": "ProjectGrid",
+      "props": ["projects", "locale"],
+      "renders": ["ProjectCard"],
+      "startLine": 10,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 17,
+      "file": "features/creative-studio/StudioProjectView.tsx",
+      "id": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+      "name": "StudioProjectView",
+      "props": ["project"],
+      "renders": ["WorkspaceShell"],
+      "startLine": 11,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 37,
+      "file": "features/creative-studio/StudioToolbar.tsx",
+      "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+      "name": "StudioToolbar",
+      "props": [],
+      "renders": ["BadgeCompact", "Separator", "Button"],
+      "startLine": 12,
+      "type": "component",
       "usesHooks": [
-        "useRelatedPosts"
+        "useWorkspaceContext",
+        "useWorkspace",
+        "useWorkspaceStore",
+        "useCallback"
       ]
     },
     {
-      "id": "component:BlogHeader",
-      "name": "BlogHeader",
+      "endLine": 41,
+      "file": "features/creative-studio/StudioToolbar.tsx",
+      "id": "component:BadgeCompact@features/creative-studio/StudioToolbar.tsx",
+      "name": "BadgeCompact",
+      "props": [],
+      "startLine": 39,
       "type": "component",
-      "file": "components/blog/BlogHeader.tsx",
-      "startLine": 5,
-      "endLine": 7,
-      "props": [
-        "title"
-      ],
-      "renders": [],
       "usesHooks": []
     },
     {
-      "id": "hook:useRelatedPosts",
-      "name": "useRelatedPosts",
-      "type": "hook",
-      "file": "hooks/useRelatedPosts.ts",
-      "startLine": 3,
-      "endLine": 6,
+      "endLine": 50,
+      "file": "features/creative-studio/ToolPalette.tsx",
+      "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+      "name": "ToolPalette",
+      "props": [],
+      "renders": ["Button"],
+      "startLine": 17,
+      "type": "component",
+      "usesHooks": ["useWorkspaceStore", "useMemo", "useCallback"]
+    },
+    {
+      "endLine": 46,
+      "file": "features/creative-studio/WorkspaceCanvas.tsx",
+      "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+      "name": "WorkspaceCanvas",
+      "props": [],
+      "renders": ["Card", "CardHeader", "CardTitle", "Badge", "CardContent"],
+      "startLine": 15,
+      "type": "component",
+      "usesHooks": ["useWorkspace", "useMemo"]
+    },
+    {
+      "endLine": 18,
+      "file": "features/creative-studio/WorkspaceShell.tsx",
+      "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+      "name": "WorkspaceShell",
+      "props": [],
+      "renders": ["StudioToolbar", "WorkspaceSidebar", "WorkspaceCanvas"],
+      "startLine": 8,
+      "type": "component",
       "usesHooks": []
     },
     {
-      "id": "service:getBlogDetail",
-      "name": "getBlogDetail",
-      "type": "service",
-      "file": "lib/blog/getBlogDetail.ts",
+      "endLine": 14,
+      "file": "features/creative-studio/WorkspaceSidebar.tsx",
+      "id": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+      "name": "WorkspaceSidebar",
+      "props": [],
+      "renders": ["ToolPalette", "LayerList"],
       "startLine": 7,
+      "type": "component",
+      "usesHooks": []
+    },
+    {
+      "endLine": 23,
+      "file": "hooks/useCounter.ts",
+      "id": "hook:useCounter@hooks/useCounter.ts",
+      "name": "useCounter",
+      "startLine": 6,
+      "type": "hook",
+      "usesHooks": ["useState", "useToggle", "useCallback"]
+    },
+    {
+      "endLine": 19,
+      "file": "hooks/useDashboardData.ts",
+      "id": "hook:useDashboardData@hooks/useDashboardData.ts",
+      "name": "useDashboardData",
+      "startLine": 6,
+      "type": "hook",
+      "usesHooks": ["useCounter", "useToggle"]
+    },
+    {
+      "endLine": 15,
+      "file": "hooks/useDebouncedValue.ts",
+      "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+      "name": "useDebouncedValue",
+      "startLine": 6,
+      "type": "hook",
+      "usesHooks": ["useState", "useEffect"]
+    },
+    {
+      "endLine": 21,
+      "file": "hooks/useIsMobile.ts",
+      "id": "hook:useIsMobile@hooks/useIsMobile.ts",
+      "name": "useIsMobile",
+      "startLine": 8,
+      "type": "hook",
+      "usesHooks": ["useState", "useEffect"]
+    },
+    {
+      "endLine": 52,
+      "file": "hooks/useKeyboardShortcuts.ts",
+      "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+      "name": "useKeyboardShortcuts",
+      "startLine": 9,
+      "type": "hook",
+      "usesHooks": [
+        "useWorkspaceStore",
+        "useLayerSelection",
+        "useRef",
+        "useEffect"
+      ]
+    },
+    {
+      "endLine": 53,
+      "file": "hooks/useLayerSelection.ts",
+      "id": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+      "name": "useLayerSelection",
+      "startLine": 8,
+      "type": "hook",
+      "usesHooks": ["useWorkspaceStore", "useMemo", "useCallback"]
+    },
+    {
+      "endLine": 6,
+      "file": "hooks/useRelatedPosts.ts",
+      "id": "hook:useRelatedPosts@hooks/useRelatedPosts.ts",
+      "name": "useRelatedPosts",
+      "startLine": 3,
+      "type": "hook",
+      "usesHooks": []
+    },
+    {
+      "endLine": 9,
+      "file": "hooks/useToggle.ts",
+      "id": "hook:useToggle@hooks/useToggle.ts",
+      "name": "useToggle",
+      "startLine": 4,
+      "type": "hook",
+      "usesHooks": ["useState", "useCallback"]
+    },
+    {
+      "endLine": 41,
+      "file": "hooks/useWorkspace.ts",
+      "id": "hook:useWorkspace@hooks/useWorkspace.ts",
+      "name": "useWorkspace",
+      "startLine": 13,
+      "type": "hook",
+      "usesHooks": [
+        "useWorkspaceContext",
+        "useIsMobile",
+        "useLayerSelection",
+        "useWorkspaceStore",
+        "useDebouncedValue",
+        "useKeyboardShortcuts",
+        "useMemo"
+      ]
+    },
+    {
       "endLine": 13,
+      "file": "lib/blog/getBlogDetail.ts",
+      "id": "service:getBlogDetail@lib/blog/getBlogDetail.ts",
+      "name": "getBlogDetail",
+      "startLine": 7,
+      "type": "service",
+      "usesHooks": []
+    },
+    {
+      "endLine": 34,
+      "file": "lib/creative-studio/getProjects.ts",
+      "id": "service:getProjects@lib/creative-studio/getProjects.ts",
+      "name": "getProjects",
+      "startLine": 10,
+      "type": "service",
+      "usesHooks": []
+    },
+    {
+      "endLine": 38,
+      "file": "lib/creative-studio/getProjects.ts",
+      "id": "service:getProjectById@lib/creative-studio/getProjects.ts",
+      "name": "getProjectById",
+      "startLine": 36,
+      "type": "service",
+      "usesHooks": []
+    },
+    {
+      "endLine": 13,
+      "file": "lib/dashboard/getStats.ts",
+      "id": "service:getStats@lib/dashboard/getStats.ts",
+      "name": "getStats",
+      "startLine": 7,
+      "type": "service",
+      "usesHooks": []
+    },
+    {
+      "endLine": 66,
+      "file": "stores/useWorkspaceStore.ts",
+      "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+      "name": "useWorkspaceStore",
+      "startLine": 30,
+      "type": "function",
       "usesHooks": []
     }
   ]

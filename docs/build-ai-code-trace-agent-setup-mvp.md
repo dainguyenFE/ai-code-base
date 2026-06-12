@@ -559,14 +559,7 @@ Ví dụ:
   "projectName": "my-next-app",
   "framework": "nextjs",
   "router": "app-router",
-  "sourceRoots": [
-    "app",
-    "components",
-    "hooks",
-    "lib",
-    "features",
-    "packages"
-  ],
+  "sourceRoots": ["app", "components", "hooks", "lib", "features", "packages"],
   "ignore": [
     "node_modules",
     ".next",

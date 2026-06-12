@@ -1,0 +1,30 @@
+{
+  "name": "@ai-trace/studio",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --bun next dev --port ${PORT:-3456}",
+    "build": "next build",
+    "start": "next start --port ${PORT:-3456}",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-trace/agent": "workspace:*",
+    "@ai-trace/cache": "workspace:*",
+    "@ai-trace/config": "workspace:*",
+    "@ai-trace/graph": "workspace:*",
+    "@ai-trace/types": "workspace:*",
+    "@dagrejs/dagre": "^3.0.0",
+    "@xyflow/react": "^12.6.0",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,7 +1,7 @@
-type Props = {
+interface Props {
   content: string;
   related: unknown[];
-};
+}
 
 export function BlogContent({ content, related }: Props) {
   return (

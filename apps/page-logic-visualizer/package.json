@@ -1,0 +1,64 @@
+{
+  "name": "@cs/page-logic-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "bin": {
+    "page-logic-visualizer": "./dist/cli/bin.mjs"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./core/src/index.ts",
+      "development": "./core/src/index.ts",
+      "import": "./dist/core/src/index.mjs"
+    },
+    "./client": {
+      "types": "./core/src/client.ts",
+      "development": "./core/src/client.ts",
+      "import": "./dist/core/src/client.mjs"
+    },
+    "./server": {
+      "types": "./core/src/server.ts",
+      "development": "./core/src/server.ts",
+      "import": "./dist/core/src/server.mjs"
+    },
+    "./project-config": {
+      "types": "./core/src/project-config.ts",
+      "development": "./core/src/project-config.ts",
+      "import": "./dist/core/src/project-config.mjs"
+    },
+    "./resolver/resolveImport": {
+      "types": "./core/src/resolver/resolveImport.ts",
+      "development": "./core/src/resolver/resolveImport.ts",
+      "import": "./dist/core/src/resolver/resolveImport.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsdown && next build",
+    "build:lib": "tsdown",
+    "clean": "rm -rf .next dist node_modules .turbo .cache",
+    "dev": "bun cli/bin.ts dev",
+    "dev:ui": "next dev",
+    "start": "next start -p 4444",
+    "test": "bun test core/tests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dagrejs/dagre": "^3.0.0",
+    "@xyflow/react": "^12.11.0",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "ts-morph": "^25.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/bun": "latest",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "tailwindcss": "^4.1.8",
+    "tsdown": "^0.12.7",
+    "typescript": "^5.8.3"
+  }
+}

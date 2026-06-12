@@ -2,10 +2,23 @@ import type { TraceConfig } from "@ai-trace/types";
 
 export function createDefaultConfig(projectName: string): TraceConfig {
   return {
-    projectName,
+    ai: {
+      baseUrl: "http://localhost:11434",
+      enabled: false,
+      maxContextFiles: 8,
+      maxGraphDepth: 2,
+      model: "qwen2.5-coder:7b",
+      provider: "ollama",
+      saveTraceResult: true,
+      temperature: 0.1,
+    },
+    cacheDir: ".ai-trace/cache",
+    db: {
+      path: ".ai-trace/cache/index.sqlite",
+      type: "sqlite",
+    },
+    exportDir: ".ai-trace/exports",
     framework: "nextjs",
-    router: "app-router",
-    sourceRoots: ["app", "components", "hooks", "lib", "features", "packages"],
     ignore: [
       "node_modules",
       ".next",
@@ -15,13 +28,10 @@ export function createDefaultConfig(projectName: string): TraceConfig {
       ".turbo",
       ".git",
     ],
-    cacheDir: ".ai-trace/cache",
-    exportDir: ".ai-trace/exports",
-    traceResultDir: ".ai-trace/trace-results",
     indexVersion: "v1",
-    db: {
-      type: "sqlite",
-      path: ".ai-trace/cache/index.sqlite",
-    },
+    projectName,
+    router: "app-router",
+    sourceRoots: ["app", "components", "hooks", "lib", "features", "packages"],
+    traceResultDir: ".ai-trace/trace-results",
   };
 }

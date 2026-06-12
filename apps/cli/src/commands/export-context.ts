@@ -1,5 +1,5 @@
-import { loadConfig } from "@ai-trace/config";
 import { openDatabase } from "@ai-trace/cache";
+import { loadConfig } from "@ai-trace/config";
 import { exportContext } from "@ai-trace/exporter";
 
 export async function runExport(cwd: string): Promise<void> {

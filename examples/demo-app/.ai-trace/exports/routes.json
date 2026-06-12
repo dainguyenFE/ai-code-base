@@ -1,12 +1,57 @@
 {
   "routes": [
     {
+      "id": "route:/",
+      "layoutFiles": ["app/layout.tsx"],
+      "pageFile": "app/page.tsx",
+      "path": "/"
+    },
+    {
+      "id": "route:/[locale]",
+      "layoutFiles": ["app/[locale]/layout.tsx"],
+      "pageFile": "app/[locale]/page.tsx",
+      "path": "/[locale]"
+    },
+    {
+      "errorFile": "app/[locale]/blogs/[slug]/error.tsx",
       "id": "route:/[locale]/blogs/[slug]",
-      "path": "/[locale]/blogs/[slug]",
-      "pageFile": "app/[locale]/blogs/[slug]/page.tsx",
       "layoutFiles": [],
       "loadingFile": "app/[locale]/blogs/[slug]/loading.tsx",
-      "errorFile": "app/[locale]/blogs/[slug]/error.tsx"
+      "pageFile": "app/[locale]/blogs/[slug]/page.tsx",
+      "path": "/[locale]/blogs/[slug]"
+    },
+    {
+      "errorFile": "app/[locale]/studio/error.tsx",
+      "id": "route:/[locale]/studio",
+      "layoutFiles": ["app/[locale]/studio/layout.tsx"],
+      "loadingFile": "app/[locale]/studio/loading.tsx",
+      "pageFile": "app/[locale]/studio/page.tsx",
+      "path": "/[locale]/studio"
+    },
+    {
+      "id": "route:/[locale]/studio/[projectId]",
+      "layoutFiles": ["app/[locale]/studio/[projectId]/layout.tsx"],
+      "loadingFile": "app/[locale]/studio/[projectId]/loading.tsx",
+      "pageFile": "app/[locale]/studio/[projectId]/page.tsx",
+      "path": "/[locale]/studio/[projectId]"
+    },
+    {
+      "id": "route:/about",
+      "layoutFiles": [],
+      "pageFile": "app/about/page.tsx",
+      "path": "/about"
+    },
+    {
+      "id": "route:/dashboard",
+      "layoutFiles": ["app/dashboard/layout.tsx"],
+      "pageFile": "app/dashboard/page.tsx",
+      "path": "/dashboard"
+    },
+    {
+      "id": "route:/dashboard/settings",
+      "layoutFiles": [],
+      "pageFile": "app/dashboard/settings/page.tsx",
+      "path": "/dashboard/settings"
     }
   ]
 }

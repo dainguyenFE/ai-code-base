@@ -5,10 +5,12 @@
   "sourceRoots": [
     "app",
     "components",
+    "context",
+    "features",
     "hooks",
     "lib",
-    "features",
-    "packages"
+    "packages",
+    "stores"
   ],
   "ignore": [
     "node_modules",

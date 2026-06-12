@@ -1,0 +1,4979 @@
+{
+  "createdAt": "2026-06-09T17:27:58.282Z",
+  "entryPoints": ["features/creative-studio/WorkspaceShell.tsx:8-18"],
+  "graph": {
+    "edges": [
+      {
+        "from": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx->component:StudioToolbar@features/creative-studio/StudioToolbar.tsx:renders",
+        "to": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx->component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx:renders",
+        "to": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx->component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx:renders",
+        "to": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx->component:StudioToolbar@features/creative-studio/StudioToolbar.tsx:sequence:1",
+        "metadata": {
+          "line": 11,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx->component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx:sequence:2",
+        "metadata": {
+          "line": 13,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx->component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx:sequence:3",
+        "metadata": {
+          "line": 14,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "render"
+        },
+        "to": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+        "id": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx->component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx:renders",
+        "to": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+        "id": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx->component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx:sequence:1",
+        "metadata": {
+          "line": 14,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:BadgeCompact@features/creative-studio/StudioToolbar.tsx:renders",
+        "to": "component:BadgeCompact@features/creative-studio/StudioToolbar.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:Separator@components/ui/separator.tsx:renders",
+        "to": "component:Separator@components/ui/separator.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:Button@components/ui/button.tsx:renders",
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:Button@components/ui/button.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "size",
+              "value": "\"sm\""
+            },
+            {
+              "name": "variant",
+              "value": "\"outline\""
+            },
+            {
+              "name": "onClick",
+              "value": "{zoomOut}"
+            }
+          ],
+          "props": "size=\"sm\", variant=\"outline\", onClick={zoomOut}",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:Button@components/ui/button.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "size",
+              "value": "\"sm\""
+            },
+            {
+              "name": "variant",
+              "value": "\"outline\""
+            },
+            {
+              "name": "onClick",
+              "value": "{zoomIn}"
+            }
+          ],
+          "props": "size=\"sm\", variant=\"outline\", onClick={zoomIn}",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:Button@components/ui/button.tsx:passes_prop:2",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "size",
+              "value": "\"sm\""
+            },
+            {
+              "name": "variant",
+              "value": "\"ghost\""
+            },
+            {
+              "name": "onClick",
+              "value": "{resetWorkspace}"
+            }
+          ],
+          "props": "size=\"sm\", variant=\"ghost\", onClick={resetWorkspace}",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->hook:useWorkspaceContext@context/WorkspaceProvider.tsx:uses_hook",
+        "to": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->hook:useWorkspace@hooks/useWorkspace.ts:uses_hook",
+        "to": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:uses_hook",
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->external:unknown#setZoom:calls:17",
+        "metadata": {
+          "argumentExpressions": ["zoom + 10"],
+          "callee": "setZoom",
+          "expression": "setZoom(zoom + 10)",
+          "kind": "external",
+          "line": 17,
+          "resolved": false
+        },
+        "to": "external:unknown#setZoom",
+        "type": "calls"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->external:unknown#setZoom:calls:18",
+        "metadata": {
+          "argumentExpressions": ["zoom - 10"],
+          "callee": "setZoom",
+          "expression": "setZoom(zoom - 10)",
+          "kind": "external",
+          "line": 18,
+          "resolved": false
+        },
+        "to": "external:unknown#setZoom",
+        "type": "calls"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->hook:useWorkspaceContext@context/WorkspaceProvider.tsx:sequence:1",
+        "metadata": {
+          "line": 13,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->hook:useWorkspace@hooks/useWorkspace.ts:sequence:2",
+        "metadata": {
+          "line": 14,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:sequence:3",
+        "metadata": {
+          "line": 15,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "hook"
+        },
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->external:unknown#setZoom:sequence:4",
+        "metadata": {
+          "line": 17,
+          "order": 4,
+          "sequenceRank": 4,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#setZoom",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->external:react#useCallback:sequence:5",
+        "metadata": {
+          "line": 17,
+          "order": 5,
+          "sequenceRank": 5,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:BadgeCompact@features/creative-studio/StudioToolbar.tsx:sequence:9",
+        "metadata": {
+          "line": 23,
+          "order": 9,
+          "sequenceRank": 6,
+          "stepKind": "render"
+        },
+        "to": "component:BadgeCompact@features/creative-studio/StudioToolbar.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:Separator@components/ui/separator.tsx:sequence:10",
+        "metadata": {
+          "line": 24,
+          "order": 10,
+          "sequenceRank": 7,
+          "stepKind": "render"
+        },
+        "to": "component:Separator@components/ui/separator.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx->component:Button@components/ui/button.tsx:sequence:11",
+        "metadata": {
+          "line": 25,
+          "order": 11,
+          "sequenceRank": 8,
+          "stepKind": "render"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+        "id": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx->component:ToolPalette@features/creative-studio/ToolPalette.tsx:renders",
+        "to": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+        "id": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx->component:LayerList@features/creative-studio/LayerList.tsx:renders",
+        "to": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+        "id": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx->component:ToolPalette@features/creative-studio/ToolPalette.tsx:sequence:1",
+        "metadata": {
+          "line": 10,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+        "id": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx->component:LayerList@features/creative-studio/LayerList.tsx:sequence:2",
+        "metadata": {
+          "line": 11,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:Card@components/ui/card.tsx:renders",
+        "to": "component:Card@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:CardHeader@components/ui/card.tsx:renders",
+        "to": "component:CardHeader@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:CardTitle@components/ui/card.tsx:renders",
+        "to": "component:CardTitle@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:Badge@components/ui/badge.tsx:renders",
+        "to": "component:Badge@components/ui/badge.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:CardContent@components/ui/card.tsx:renders",
+        "to": "component:CardContent@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:Card@components/ui/card.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "data-slot",
+              "value": "\"workspace-canvas\""
+            }
+          ],
+          "props": "data-slot=\"workspace-canvas\"",
+          "target": "Card"
+        },
+        "to": "component:Card@components/ui/card.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:Badge@components/ui/badge.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "variant",
+              "value": "\"secondary\""
+            }
+          ],
+          "props": "variant=\"secondary\"",
+          "target": "Badge"
+        },
+        "to": "component:Badge@components/ui/badge.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->hook:useWorkspace@hooks/useWorkspace.ts:uses_hook",
+        "to": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->hook:useWorkspace@hooks/useWorkspace.ts:sequence:1",
+        "metadata": {
+          "line": 22,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->external:react#useMemo:sequence:2",
+        "metadata": {
+          "line": 24,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useMemo",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:Card@components/ui/card.tsx:sequence:3",
+        "metadata": {
+          "line": 30,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "render"
+        },
+        "to": "component:Card@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:CardHeader@components/ui/card.tsx:sequence:4",
+        "metadata": {
+          "line": 31,
+          "order": 4,
+          "sequenceRank": 4,
+          "stepKind": "render"
+        },
+        "to": "component:CardHeader@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:CardTitle@components/ui/card.tsx:sequence:5",
+        "metadata": {
+          "line": 32,
+          "order": 5,
+          "sequenceRank": 5,
+          "stepKind": "render"
+        },
+        "to": "component:CardTitle@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:Badge@components/ui/badge.tsx:sequence:6",
+        "metadata": {
+          "line": 33,
+          "order": 6,
+          "sequenceRank": 6,
+          "stepKind": "render"
+        },
+        "to": "component:Badge@components/ui/badge.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx->component:CardContent@components/ui/card.tsx:sequence:7",
+        "metadata": {
+          "line": 35,
+          "order": 7,
+          "sequenceRank": 7,
+          "stepKind": "render"
+        },
+        "to": "component:CardContent@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+        "id": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx->component:StudioProjectView@features/creative-studio/StudioProjectView.tsx:renders",
+        "to": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+        "id": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx->component:StudioProjectView@features/creative-studio/StudioProjectView.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "project",
+              "value": "{project}"
+            }
+          ],
+          "props": "project={project}",
+          "target": "StudioProjectView"
+        },
+        "to": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "id": "service:getProjectById@lib/creative-studio/getProjects.ts->component:StudioProjectView@features/creative-studio/StudioProjectView.tsx:prop_source:project:16",
+        "metadata": {
+          "callee": "getProjectById",
+          "jsxValue": "{project}",
+          "line": 16,
+          "passedFrom": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+          "propName": "project",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "getProjectById",
+                "children": [
+                  {
+                    "expression": "getProjectById",
+                    "kind": "identifier",
+                    "line": 10,
+                    "name": "getProjectById"
+                  },
+                  {
+                    "children": [
+                      {
+                        "expression": "params",
+                        "kind": "destructure",
+                        "line": 9,
+                        "name": "params"
+                      }
+                    ],
+                    "expression": "params.projectId",
+                    "kind": "member",
+                    "line": 10,
+                    "name": "projectId",
+                    "property": "projectId"
+                  }
+                ],
+                "expression": "getProjectById(params.projectId)",
+                "kind": "call",
+                "line": 10,
+                "name": "getProjectById"
+              }
+            ],
+            "expression": "getProjectById(params.projectId)",
+            "kind": "identifier",
+            "line": 10,
+            "name": "project"
+          },
+          "targetComponent": "StudioProjectView"
+        },
+        "to": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+        "id": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx->component:StudioProjectView@features/creative-studio/StudioProjectView.tsx:sequence:3",
+        "metadata": {
+          "line": 16,
+          "order": 3,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:Separator@components/ui/separator.tsx:renders",
+        "to": "component:Separator@components/ui/separator.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:Separator@components/ui/separator.tsx:sequence:2",
+        "metadata": {
+          "line": 23,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:Separator@components/ui/separator.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->component:Separator@components/ui/separator.tsx:renders",
+        "to": "component:Separator@components/ui/separator.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->component:Separator@components/ui/separator.tsx:sequence:9",
+        "metadata": {
+          "line": 31,
+          "order": 9,
+          "sequenceRank": 6,
+          "stepKind": "render"
+        },
+        "to": "component:Separator@components/ui/separator.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioError@app/[locale]/studio/error.tsx",
+        "id": "component:StudioError@app/[locale]/studio/error.tsx->component:Button@components/ui/button.tsx:renders",
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioError@app/[locale]/studio/error.tsx",
+        "id": "component:StudioError@app/[locale]/studio/error.tsx->component:Button@components/ui/button.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "onClick",
+              "value": "{reset}"
+            }
+          ],
+          "props": "onClick={reset}",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:StudioError@app/[locale]/studio/error.tsx",
+        "id": "component:StudioError@app/[locale]/studio/error.tsx->component:Button@components/ui/button.tsx:sequence:1",
+        "metadata": {
+          "line": 16,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:HomePage@app/page.tsx",
+        "id": "component:HomePage@app/page.tsx->component:Button@components/ui/button.tsx:renders",
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:HomePage@app/page.tsx",
+        "id": "component:HomePage@app/page.tsx->component:Button@components/ui/button.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "variant",
+              "value": "\"outline\""
+            }
+          ],
+          "props": "variant=\"outline\"",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:HomePage@app/page.tsx",
+        "id": "component:HomePage@app/page.tsx->component:Button@components/ui/button.tsx:sequence:2",
+        "metadata": {
+          "line": 11,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:Button@components/ui/button.tsx:renders",
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:Button@components/ui/button.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "variant",
+              "value": "\"outline\""
+            }
+          ],
+          "props": "variant=\"outline\"",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:Button@components/ui/button.tsx:sequence:1",
+        "metadata": {
+          "line": 21,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->component:Button@components/ui/button.tsx:renders",
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->component:Button@components/ui/button.tsx:sequence:7",
+        "metadata": {
+          "line": 37,
+          "order": 7,
+          "sequenceRank": 4,
+          "stepKind": "render"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->component:Button@components/ui/button.tsx:renders",
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->component:Button@components/ui/button.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "size",
+              "value": "\"sm\""
+            },
+            {
+              "name": "variant",
+              "value": "\"outline\""
+            },
+            {
+              "name": "onClick",
+              "value": "{handleAdd}"
+            }
+          ],
+          "props": "size=\"sm\", variant=\"outline\", onClick={handleAdd}",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "external:react#useCallback",
+        "id": "external:react#useCallback->component:Button@components/ui/button.tsx:prop_source:onClick:28",
+        "metadata": {
+          "callee": "useCallback",
+          "jsxValue": "{handleAdd}",
+          "line": 28,
+          "passedFrom": "component:LayerList@features/creative-studio/LayerList.tsx",
+          "propName": "onClick",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useCallback",
+                "children": [
+                  {
+                    "callee": "useCallback",
+                    "expression": "useCallback",
+                    "kind": "hook_call",
+                    "line": 21,
+                    "name": "useCallback"
+                  },
+                  {
+                    "expression": "() => {\n    addLayer(`Layer ${layers.length + 1}`);\n  }",
+                    "kind": "unknown",
+                    "line": 21
+                  },
+                  {
+                    "expression": "[addLayer, layers.length]",
+                    "kind": "unknown",
+                    "line": 23
+                  }
+                ],
+                "expression": "useCallback(() => {\n    addLayer(`Layer ${layers.length + 1}`);\n  }, [addLayer, layers.length])",
+                "kind": "hook_call",
+                "line": 21,
+                "name": "useCallback"
+              }
+            ],
+            "expression": "useCallback(() => {\n    addLayer(`Layer ${layers.length + 1}`);\n  }, [addLayer, layers.length])",
+            "kind": "identifier",
+            "line": 21,
+            "name": "handleAdd"
+          },
+          "targetComponent": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->component:Button@components/ui/button.tsx:sequence:8",
+        "metadata": {
+          "line": 28,
+          "order": 8,
+          "sequenceRank": 5,
+          "stepKind": "render"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "external:react#useCallback",
+        "id": "external:react#useCallback->component:Button@components/ui/button.tsx:prop_source:onClick:25",
+        "metadata": {
+          "callee": "useCallback",
+          "jsxValue": "{zoomOut}",
+          "line": 25,
+          "passedFrom": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+          "propName": "onClick",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useCallback",
+                "children": [
+                  {
+                    "callee": "useCallback",
+                    "expression": "useCallback",
+                    "kind": "hook_call",
+                    "line": 18,
+                    "name": "useCallback"
+                  },
+                  {
+                    "expression": "() => setZoom(zoom - 10)",
+                    "kind": "unknown",
+                    "line": 18
+                  },
+                  {
+                    "expression": "[setZoom, zoom]",
+                    "kind": "unknown",
+                    "line": 18
+                  }
+                ],
+                "expression": "useCallback(() => setZoom(zoom - 10), [setZoom, zoom])",
+                "kind": "hook_call",
+                "line": 18,
+                "name": "useCallback"
+              }
+            ],
+            "expression": "useCallback(() => setZoom(zoom - 10), [setZoom, zoom])",
+            "kind": "identifier",
+            "line": 18,
+            "name": "zoomOut"
+          },
+          "targetComponent": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "external:react#useCallback",
+        "id": "external:react#useCallback->component:Button@components/ui/button.tsx:prop_source:onClick:29",
+        "metadata": {
+          "callee": "useCallback",
+          "jsxValue": "{zoomIn}",
+          "line": 29,
+          "passedFrom": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+          "propName": "onClick",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useCallback",
+                "children": [
+                  {
+                    "callee": "useCallback",
+                    "expression": "useCallback",
+                    "kind": "hook_call",
+                    "line": 17,
+                    "name": "useCallback"
+                  },
+                  {
+                    "expression": "() => setZoom(zoom + 10)",
+                    "kind": "unknown",
+                    "line": 17
+                  },
+                  {
+                    "expression": "[setZoom, zoom]",
+                    "kind": "unknown",
+                    "line": 17
+                  }
+                ],
+                "expression": "useCallback(() => setZoom(zoom + 10), [setZoom, zoom])",
+                "kind": "hook_call",
+                "line": 17,
+                "name": "useCallback"
+              }
+            ],
+            "expression": "useCallback(() => setZoom(zoom + 10), [setZoom, zoom])",
+            "kind": "identifier",
+            "line": 17,
+            "name": "zoomIn"
+          },
+          "targetComponent": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "id": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx->component:Button@components/ui/button.tsx:prop_source:onClick:32",
+        "metadata": {
+          "callee": "useWorkspaceContext",
+          "jsxValue": "{resetWorkspace}",
+          "line": 32,
+          "passedFrom": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+          "propName": "onClick",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useWorkspaceContext",
+                "children": [
+                  {
+                    "callee": "useWorkspaceContext",
+                    "expression": "useWorkspaceContext",
+                    "kind": "hook_call",
+                    "line": 13,
+                    "name": "useWorkspaceContext"
+                  }
+                ],
+                "expression": "useWorkspaceContext()",
+                "kind": "hook_call",
+                "line": 13,
+                "name": "useWorkspaceContext"
+              }
+            ],
+            "expression": "resetWorkspace ← useWorkspaceContext()",
+            "kind": "destructure",
+            "line": 13,
+            "name": "resetWorkspace"
+          },
+          "targetComponent": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->component:Button@components/ui/button.tsx:renders",
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->component:Button@components/ui/button.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "key",
+              "value": "{tool}"
+            },
+            {
+              "name": "size",
+              "value": "\"sm\""
+            },
+            {
+              "name": "variant",
+              "value": "{isActive ? \"default\" : \"outline\"}"
+            },
+            {
+              "name": "onClick",
+              "value": "{handleSelect(tool)}"
+            }
+          ],
+          "props": "key={tool}, size=\"sm\", variant={isActive ? \"default\" : \"outline\"}, onClick={handleSelect(tool)}",
+          "target": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "external:unknown#handleSelect",
+        "id": "external:unknown#handleSelect->component:Button@components/ui/button.tsx:prop_source:onClick:43",
+        "metadata": {
+          "callee": "handleSelect",
+          "jsxValue": "{handleSelect(tool)}",
+          "line": 43,
+          "passedFrom": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+          "propName": "onClick",
+          "sourceFlow": {
+            "callee": "handleSelect",
+            "children": [
+              {
+                "children": [
+                  {
+                    "callee": "useCallback",
+                    "children": [
+                      {
+                        "callee": "useCallback",
+                        "expression": "useCallback",
+                        "kind": "hook_call",
+                        "line": 31,
+                        "name": "useCallback"
+                      },
+                      {
+                        "expression": "(tool: WorkspaceState[\"selectedTool\"]) => () => selectTool(tool)",
+                        "kind": "unknown",
+                        "line": 32
+                      },
+                      {
+                        "expression": "[selectTool]",
+                        "kind": "unknown",
+                        "line": 33
+                      }
+                    ],
+                    "expression": "useCallback(\n    (tool: WorkspaceState[\"selectedTool\"]) => () => selectTool(tool),\n    [selectTool]\n  )",
+                    "kind": "hook_call",
+                    "line": 31,
+                    "name": "useCallback"
+                  }
+                ],
+                "expression": "useCallback(\n    (tool: WorkspaceState[\"selectedTool\"]) => () => selectTool(tool),\n    [selectTool]\n  )",
+                "kind": "identifier",
+                "line": 31,
+                "name": "handleSelect"
+              },
+              {
+                "expression": "tool",
+                "kind": "destructure",
+                "line": 38,
+                "name": "tool"
+              }
+            ],
+            "expression": "handleSelect(tool)",
+            "kind": "call",
+            "line": 43,
+            "name": "handleSelect"
+          },
+          "targetComponent": "Button"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->component:Button@components/ui/button.tsx:sequence:11",
+        "metadata": {
+          "line": 39,
+          "order": 11,
+          "sequenceRank": 8,
+          "stepKind": "render"
+        },
+        "to": "component:Button@components/ui/button.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "id": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx->external:react#use:calls:56",
+        "metadata": {
+          "argumentExpressions": ["WorkspaceContext"],
+          "callee": "use",
+          "expression": "use(WorkspaceContext)",
+          "kind": "external",
+          "line": 56,
+          "moduleSpecifier": "react",
+          "resolved": false
+        },
+        "to": "external:react#use",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "id": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx->external:react#use:sequence:1",
+        "metadata": {
+          "line": 56,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "external:react#use",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useWorkspaceContext@context/WorkspaceProvider.tsx:uses_hook",
+        "to": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useWorkspaceContext@context/WorkspaceProvider.tsx:sequence:1",
+        "metadata": {
+          "line": 14,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useIsMobile@hooks/useIsMobile.ts:uses_hook",
+        "to": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useLayerSelection@hooks/useLayerSelection.ts:uses_hook",
+        "to": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->function:useWorkspaceStore@stores/useWorkspaceStore.ts:uses_hook",
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useDebouncedValue@hooks/useDebouncedValue.ts:uses_hook",
+        "to": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts:uses_hook",
+        "to": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useIsMobile@hooks/useIsMobile.ts:sequence:2",
+        "metadata": {
+          "line": 15,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useLayerSelection@hooks/useLayerSelection.ts:sequence:3",
+        "metadata": {
+          "line": 16,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "hook"
+        },
+        "to": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->function:useWorkspaceStore@stores/useWorkspaceStore.ts:sequence:4",
+        "metadata": {
+          "line": 18,
+          "order": 4,
+          "sequenceRank": 4,
+          "stepKind": "hook"
+        },
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useDebouncedValue@hooks/useDebouncedValue.ts:sequence:7",
+        "metadata": {
+          "line": 22,
+          "order": 7,
+          "sequenceRank": 5,
+          "stepKind": "hook"
+        },
+        "to": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts:sequence:8",
+        "metadata": {
+          "line": 24,
+          "order": 8,
+          "sequenceRank": 6,
+          "stepKind": "hook"
+        },
+        "to": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts->external:react#useMemo:sequence:9",
+        "metadata": {
+          "line": 26,
+          "order": 9,
+          "sequenceRank": 7,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useMemo",
+        "type": "sequence"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->function:LayerItem@features/creative-studio/LayerItem.tsx:prop_source:onToggleLock:38",
+        "metadata": {
+          "callee": "useWorkspaceStore",
+          "jsxValue": "{toggleLayerLock}",
+          "line": 38,
+          "passedFrom": "component:LayerList@features/creative-studio/LayerList.tsx",
+          "propName": "onToggleLock",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useWorkspaceStore",
+                "children": [
+                  {
+                    "callee": "useWorkspaceStore",
+                    "expression": "useWorkspaceStore",
+                    "kind": "hook_call",
+                    "line": 15,
+                    "name": "useWorkspaceStore"
+                  },
+                  {
+                    "expression": "(state) => state.toggleLayerLock",
+                    "kind": "unknown",
+                    "line": 15
+                  }
+                ],
+                "expression": "useWorkspaceStore((state) => state.toggleLayerLock)",
+                "kind": "hook_call",
+                "line": 15,
+                "name": "useWorkspaceStore"
+              }
+            ],
+            "expression": "useWorkspaceStore((state) => state.toggleLayerLock)",
+            "kind": "identifier",
+            "line": 15,
+            "name": "toggleLayerLock"
+          },
+          "targetComponent": "LayerItem"
+        },
+        "to": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->function:LayerItem@features/creative-studio/LayerItem.tsx:prop_source:onToggleVisibility:39",
+        "metadata": {
+          "callee": "useWorkspaceStore",
+          "jsxValue": "{toggleLayerVisibility}",
+          "line": 39,
+          "passedFrom": "component:LayerList@features/creative-studio/LayerList.tsx",
+          "propName": "onToggleVisibility",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useWorkspaceStore",
+                "children": [
+                  {
+                    "callee": "useWorkspaceStore",
+                    "expression": "useWorkspaceStore",
+                    "kind": "hook_call",
+                    "line": 16,
+                    "name": "useWorkspaceStore"
+                  },
+                  {
+                    "expression": "(state) => state.toggleLayerVisibility",
+                    "kind": "unknown",
+                    "line": 17
+                  }
+                ],
+                "expression": "useWorkspaceStore(\n    (state) => state.toggleLayerVisibility\n  )",
+                "kind": "hook_call",
+                "line": 16,
+                "name": "useWorkspaceStore"
+              }
+            ],
+            "expression": "useWorkspaceStore(\n    (state) => state.toggleLayerVisibility\n  )",
+            "kind": "identifier",
+            "line": 16,
+            "name": "toggleLayerVisibility"
+          },
+          "targetComponent": "LayerItem"
+        },
+        "to": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->builtin:Date.now:calls:33",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "Date.now",
+          "expression": "Date.now()",
+          "kind": "builtin",
+          "line": 33,
+          "resolved": false
+        },
+        "to": "builtin:Date.now",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:calls:34",
+        "metadata": {
+          "argumentExpressions": [
+            "(state) => ({\n      activeLayerId: id,\n      layers: [...state.layers, { id, locked: false, name, visible: true }],\n    })"
+          ],
+          "callee": "set",
+          "expression": "set((state) => ({\n      activeLayerId: id,\n      layers: [...state.layers, { id, locked: false, name, visible: true }],\n    }))",
+          "kind": "external",
+          "line": 34,
+          "resolved": false
+        },
+        "to": "external:unknown#set",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#get:calls:41",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "get",
+          "expression": "get()",
+          "kind": "external",
+          "line": 41,
+          "resolved": false
+        },
+        "to": "external:unknown#get",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#layers.filter:calls:42",
+        "metadata": {
+          "argumentExpressions": ["(layer) => layer.id !== id"],
+          "callee": "layers.filter",
+          "expression": "layers.filter((layer) => layer.id !== id)",
+          "kind": "external",
+          "line": 42,
+          "resolved": false
+        },
+        "to": "external:unknown#layers.filter",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:calls:43",
+        "metadata": {
+          "argumentExpressions": [
+            "{\n      activeLayerId:\n        activeLayerId === id ? (next[0]?.id ?? null) : activeLayerId,\n      layers: next,\n    }"
+          ],
+          "callee": "set",
+          "expression": "set({\n      activeLayerId:\n        activeLayerId === id ? (next[0]?.id ?? null) : activeLayerId,\n      layers: next,\n    })",
+          "kind": "external",
+          "line": 43,
+          "resolved": false
+        },
+        "to": "external:unknown#set",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:calls:49",
+        "metadata": {
+          "argumentExpressions": ["{ activeLayerId: id }"],
+          "callee": "set",
+          "expression": "set({ activeLayerId: id })",
+          "kind": "external",
+          "line": 49,
+          "resolved": false
+        },
+        "to": "external:unknown#set",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:calls:50",
+        "metadata": {
+          "argumentExpressions": ["{ selectedTool: tool }"],
+          "callee": "set",
+          "expression": "set({ selectedTool: tool })",
+          "kind": "external",
+          "line": 50,
+          "resolved": false
+        },
+        "to": "external:unknown#set",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:calls:52",
+        "metadata": {
+          "argumentExpressions": [
+            "{ zoom: Math.min(400, Math.max(25, zoom)) }"
+          ],
+          "callee": "set",
+          "expression": "set({ zoom: Math.min(400, Math.max(25, zoom)) })",
+          "kind": "external",
+          "line": 52,
+          "resolved": false
+        },
+        "to": "external:unknown#set",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->builtin:Math.min:calls:52",
+        "metadata": {
+          "argumentExpressions": ["400", "Math.max(25, zoom)"],
+          "callee": "Math.min",
+          "expression": "Math.min(400, Math.max(25, zoom))",
+          "kind": "builtin",
+          "line": 52,
+          "resolved": false
+        },
+        "to": "builtin:Math.min",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->builtin:Math.max:calls:52",
+        "metadata": {
+          "argumentExpressions": ["25", "zoom"],
+          "callee": "Math.max",
+          "expression": "Math.max(25, zoom)",
+          "kind": "builtin",
+          "line": 52,
+          "resolved": false
+        },
+        "to": "builtin:Math.max",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:calls:54",
+        "metadata": {
+          "argumentExpressions": [
+            "(state) => ({\n      layers: state.layers.map((layer) =>\n        layer.id === id ? { ...layer, locked: !layer.locked } : layer\n      ),\n    })"
+          ],
+          "callee": "set",
+          "expression": "set((state) => ({\n      layers: state.layers.map((layer) =>\n        layer.id === id ? { ...layer, locked: !layer.locked } : layer\n      ),\n    }))",
+          "kind": "external",
+          "line": 54,
+          "resolved": false
+        },
+        "to": "external:unknown#set",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#state.layers.map:calls:55",
+        "metadata": {
+          "argumentExpressions": [
+            "(layer) =>\n        layer.id === id ? { ...layer, locked: !layer.locked } : layer"
+          ],
+          "callee": "state.layers.map",
+          "expression": "state.layers.map((layer) =>\n        layer.id === id ? { ...layer, locked: !layer.locked } : layer\n      )",
+          "kind": "external",
+          "line": 55,
+          "resolved": false
+        },
+        "to": "external:unknown#state.layers.map",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:calls:60",
+        "metadata": {
+          "argumentExpressions": [
+            "(state) => ({\n      layers: state.layers.map((layer) =>\n        layer.id === id ? { ...layer, visible: !layer.visible } : layer\n      ),\n    })"
+          ],
+          "callee": "set",
+          "expression": "set((state) => ({\n      layers: state.layers.map((layer) =>\n        layer.id === id ? { ...layer, visible: !layer.visible } : layer\n      ),\n    }))",
+          "kind": "external",
+          "line": 60,
+          "resolved": false
+        },
+        "to": "external:unknown#set",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#state.layers.map:calls:61",
+        "metadata": {
+          "argumentExpressions": [
+            "(layer) =>\n        layer.id === id ? { ...layer, visible: !layer.visible } : layer"
+          ],
+          "callee": "state.layers.map",
+          "expression": "state.layers.map((layer) =>\n        layer.id === id ? { ...layer, visible: !layer.visible } : layer\n      )",
+          "kind": "external",
+          "line": 61,
+          "resolved": false
+        },
+        "to": "external:unknown#state.layers.map",
+        "type": "calls"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->builtin:Date:sequence:1",
+        "metadata": {
+          "line": 33,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "builtin:Date",
+        "type": "sequence"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#set:sequence:2",
+        "metadata": {
+          "line": 34,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#set",
+        "type": "sequence"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#get:sequence:3",
+        "metadata": {
+          "line": 41,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#get",
+        "type": "sequence"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#layers:sequence:4",
+        "metadata": {
+          "line": 42,
+          "order": 4,
+          "sequenceRank": 4,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#layers",
+        "type": "sequence"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->builtin:Math:sequence:10",
+        "metadata": {
+          "line": 52,
+          "order": 10,
+          "sequenceRank": 5,
+          "stepKind": "call"
+        },
+        "to": "builtin:Math",
+        "type": "sequence"
+      },
+      {
+        "from": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts->external:unknown#state:sequence:13",
+        "metadata": {
+          "line": 55,
+          "order": 13,
+          "sequenceRank": 6,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#state",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:uses_hook",
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:sequence:1",
+        "metadata": {
+          "line": 33,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:uses_hook",
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:sequence:1",
+        "metadata": {
+          "line": 13,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:uses_hook",
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->function:useWorkspaceStore@stores/useWorkspaceStore.ts:sequence:1",
+        "metadata": {
+          "line": 18,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->function:useWorkspaceStore@stores/useWorkspaceStore.ts:uses_hook",
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->function:useWorkspaceStore@stores/useWorkspaceStore.ts:sequence:1",
+        "metadata": {
+          "line": 10,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->function:useWorkspaceStore@stores/useWorkspaceStore.ts:uses_hook",
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->function:useWorkspaceStore@stores/useWorkspaceStore.ts:sequence:1",
+        "metadata": {
+          "line": 9,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#setZoom:calls:39",
+        "metadata": {
+          "argumentExpressions": ["zoom + 10"],
+          "callee": "setZoom",
+          "expression": "setZoom(zoom + 10)",
+          "kind": "external",
+          "line": 39,
+          "resolved": false
+        },
+        "to": "external:unknown#setZoom",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#setZoom:calls:45",
+        "metadata": {
+          "argumentExpressions": ["zoom - 10"],
+          "callee": "setZoom",
+          "expression": "setZoom(zoom - 10)",
+          "kind": "external",
+          "line": 45,
+          "resolved": false
+        },
+        "to": "external:unknown#setZoom",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#setZoom:sequence:16",
+        "metadata": {
+          "line": 39,
+          "order": 16,
+          "sequenceRank": 8,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#setZoom",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->external:react#useCallback:sequence:2",
+        "metadata": {
+          "line": 35,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->external:react#useCallback:sequence:1",
+        "metadata": {
+          "line": 26,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->external:react#useCallback:sequence:6",
+        "metadata": {
+          "line": 21,
+          "order": 6,
+          "sequenceRank": 3,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:react#useCallback:sequence:8",
+        "metadata": {
+          "line": 31,
+          "order": 8,
+          "sequenceRank": 5,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useCounter@hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts->external:react#useCallback:sequence:3",
+        "metadata": {
+          "line": 10,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:react#useCallback:sequence:8",
+        "metadata": {
+          "line": 23,
+          "order": 8,
+          "sequenceRank": 4,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useToggle@hooks/useToggle.ts",
+        "id": "hook:useToggle@hooks/useToggle.ts->external:react#useCallback:sequence:3",
+        "metadata": {
+          "line": 6,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useCallback",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#TOOLS.map:calls:23",
+        "metadata": {
+          "argumentExpressions": [
+            "(tool) => ({\n        isActive: tool === selectedTool,\n        label: tool.charAt(0).toUpperCase() + tool.slice(1),\n        tool,\n      })"
+          ],
+          "callee": "TOOLS.map",
+          "expression": "TOOLS.map((tool) => ({\n        isActive: tool === selectedTool,\n        label: tool.charAt(0).toUpperCase() + tool.slice(1),\n        tool,\n      }))",
+          "kind": "external",
+          "line": 23,
+          "resolved": false
+        },
+        "to": "external:unknown#TOOLS.map",
+        "type": "calls"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#tool.charAt(0).toUpperCase:calls:25",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "tool.charAt(0).toUpperCase",
+          "expression": "tool.charAt(0).toUpperCase()",
+          "kind": "external",
+          "line": 25,
+          "resolved": false
+        },
+        "to": "external:unknown#tool.charAt(0).toUpperCase",
+        "type": "calls"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#tool.slice:calls:25",
+        "metadata": {
+          "argumentExpressions": ["1"],
+          "callee": "tool.slice",
+          "expression": "tool.slice(1)",
+          "kind": "external",
+          "line": 25,
+          "resolved": false
+        },
+        "to": "external:unknown#tool.slice",
+        "type": "calls"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#selectTool:calls:32",
+        "metadata": {
+          "argumentExpressions": ["tool"],
+          "callee": "selectTool",
+          "expression": "selectTool(tool)",
+          "kind": "external",
+          "line": 32,
+          "resolved": false
+        },
+        "to": "external:unknown#selectTool",
+        "type": "calls"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#toolButtons.map:calls:38",
+        "metadata": {
+          "argumentExpressions": [
+            "({ tool, label, isActive }) => (\n        <Button\n          key={tool}\n          size=\"sm\"\n          variant={isActive ? \"default\" : \"outline\"}\n          onClick…"
+          ],
+          "callee": "toolButtons.map",
+          "expression": "toolButtons.map(({ tool, label, isActive }) => (\n        <Button\n          key={tool}\n          size=\"sm\"\n          variant={isActive ? \"default\" : \"outline\"}\n …",
+          "kind": "external",
+          "line": 38,
+          "resolved": false
+        },
+        "to": "external:unknown#toolButtons.map",
+        "type": "calls"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#handleSelect:calls:43",
+        "metadata": {
+          "argumentExpressions": ["tool"],
+          "callee": "handleSelect",
+          "expression": "handleSelect(tool)",
+          "kind": "external",
+          "line": 43,
+          "resolved": false
+        },
+        "to": "external:unknown#handleSelect",
+        "type": "calls"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:react#useMemo:sequence:3",
+        "metadata": {
+          "line": 21,
+          "order": 3,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useMemo",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#TOOLS:sequence:4",
+        "metadata": {
+          "line": 23,
+          "order": 4,
+          "sequenceRank": 3,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#TOOLS",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#tool:sequence:5",
+        "metadata": {
+          "line": 25,
+          "order": 5,
+          "sequenceRank": 4,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#tool",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#selectTool:sequence:9",
+        "metadata": {
+          "line": 32,
+          "order": 9,
+          "sequenceRank": 6,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#selectTool",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#toolButtons:sequence:10",
+        "metadata": {
+          "line": 38,
+          "order": 10,
+          "sequenceRank": 7,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#toolButtons",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx->external:unknown#handleSelect:sequence:13",
+        "metadata": {
+          "line": 43,
+          "order": 13,
+          "sequenceRank": 9,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#handleSelect",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->function:LayerItem@features/creative-studio/LayerItem.tsx:renders",
+        "to": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->function:LayerItem@features/creative-studio/LayerItem.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "key",
+              "value": "{layer.id}"
+            },
+            {
+              "name": "isActive",
+              "value": "{layer.id === activeLayerId}"
+            },
+            {
+              "name": "layer",
+              "value": "{layer}"
+            },
+            {
+              "name": "onSelect",
+              "value": "{selectLayer}"
+            },
+            {
+              "name": "onToggleLock",
+              "value": "{toggleLayerLock}"
+            },
+            {
+              "name": "onToggleVisibility",
+              "value": "{toggleLayerVisibility}"
+            }
+          ],
+          "props": "key={layer.id}, isActive={layer.id === activeLayerId}, layer={layer}, onSelect={selectLayer}, onToggleLock={toggleLayerLock}, onToggleVisibility={toggleLayerVisibility}",
+          "target": "LayerItem"
+        },
+        "to": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->hook:useLayerSelection@hooks/useLayerSelection.ts:uses_hook",
+        "to": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->external:unknown#addLayer:calls:22",
+        "metadata": {
+          "argumentExpressions": ["`Layer ${layers.length + 1}`"],
+          "callee": "addLayer",
+          "expression": "addLayer(`Layer ${layers.length + 1}`)",
+          "kind": "external",
+          "line": 22,
+          "resolved": false
+        },
+        "to": "external:unknown#addLayer",
+        "type": "calls"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->external:unknown#layers.map:calls:32",
+        "metadata": {
+          "argumentExpressions": [
+            "(layer) => (\n        <LayerItem\n          key={layer.id}\n          isActive={layer.id === activeLayerId}\n          layer={layer}\n          onSelect={selectLayer…"
+          ],
+          "callee": "layers.map",
+          "expression": "layers.map((layer) => (\n        <LayerItem\n          key={layer.id}\n          isActive={layer.id === activeLayerId}\n          layer={layer}\n          onSelect={…",
+          "kind": "external",
+          "line": 32,
+          "resolved": false
+        },
+        "to": "external:unknown#layers.map",
+        "type": "calls"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->hook:useLayerSelection@hooks/useLayerSelection.ts:sequence:5",
+        "metadata": {
+          "line": 19,
+          "order": 5,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->external:unknown#addLayer:sequence:7",
+        "metadata": {
+          "line": 22,
+          "order": 7,
+          "sequenceRank": 4,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#addLayer",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->external:unknown#layers:sequence:10",
+        "metadata": {
+          "line": 32,
+          "order": 10,
+          "sequenceRank": 7,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#layers",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx->function:LayerItem@features/creative-studio/LayerItem.tsx:sequence:11",
+        "metadata": {
+          "line": 33,
+          "order": 11,
+          "sequenceRank": 8,
+          "stepKind": "render"
+        },
+        "to": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:Card@components/ui/card.tsx:renders",
+        "to": "component:Card@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:Card@components/ui/card.tsx:sequence:1",
+        "metadata": {
+          "line": 21,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:Card@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:CardHeader@components/ui/card.tsx:renders",
+        "to": "component:CardHeader@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:CardHeader@components/ui/card.tsx:sequence:2",
+        "metadata": {
+          "line": 22,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:CardHeader@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:CardTitle@components/ui/card.tsx:renders",
+        "to": "component:CardTitle@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:CardTitle@components/ui/card.tsx:sequence:3",
+        "metadata": {
+          "line": 23,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "render"
+        },
+        "to": "component:CardTitle@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->component:Badge@components/ui/badge.tsx:renders",
+        "to": "component:Badge@components/ui/badge.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->component:Badge@components/ui/badge.tsx:sequence:4",
+        "metadata": {
+          "line": 35,
+          "order": 4,
+          "sequenceRank": 3,
+          "stepKind": "render"
+        },
+        "to": "component:Badge@components/ui/badge.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:Badge@components/ui/badge.tsx:renders",
+        "to": "component:Badge@components/ui/badge.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:Badge@components/ui/badge.tsx:sequence:4",
+        "metadata": {
+          "line": 24,
+          "order": 4,
+          "sequenceRank": 4,
+          "stepKind": "render"
+        },
+        "to": "component:Badge@components/ui/badge.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:CardContent@components/ui/card.tsx:renders",
+        "to": "component:CardContent@components/ui/card.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx->component:CardContent@components/ui/card.tsx:sequence:5",
+        "metadata": {
+          "line": 26,
+          "order": 5,
+          "sequenceRank": 5,
+          "stepKind": "render"
+        },
+        "to": "component:CardContent@components/ui/card.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "external:react#useMemo",
+        "id": "external:react#useMemo->function:WorkspaceContext@context/WorkspaceProvider.tsx:prop_source:value:52",
+        "metadata": {
+          "callee": "useMemo",
+          "jsxValue": "{value}",
+          "line": 52,
+          "passedFrom": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+          "propName": "value",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useMemo",
+                "children": [
+                  {
+                    "callee": "useMemo",
+                    "expression": "useMemo",
+                    "kind": "hook_call",
+                    "line": 40,
+                    "name": "useMemo"
+                  },
+                  {
+                    "expression": "() => ({\n      isSaving: false,\n      locale,\n      markSaving: () => {},\n      projectId,\n      projectName,\n      resetWorkspace,\n    })",
+                    "kind": "unknown",
+                    "line": 41
+                  },
+                  {
+                    "expression": "[locale, projectId, projectName, resetWorkspace]",
+                    "kind": "unknown",
+                    "line": 49
+                  }
+                ],
+                "expression": "useMemo<WorkspaceContextValue>(\n    () => ({\n      isSaving: false,\n      locale,\n      markSaving: () => {},\n      projectId,\n      projectName,\n      resetWor…",
+                "kind": "hook_call",
+                "line": 40,
+                "name": "useMemo"
+              }
+            ],
+            "expression": "useMemo<WorkspaceContextValue>(\n    () => ({\n      isSaving: false,\n      locale,\n      markSaving: () => {},\n      projectId,\n      projectName,\n      resetWor…",
+            "kind": "identifier",
+            "line": 40,
+            "name": "value"
+          },
+          "targetComponent": "WorkspaceContext"
+        },
+        "to": "function:WorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->external:react#useMemo:sequence:5",
+        "metadata": {
+          "line": 40,
+          "order": 5,
+          "sequenceRank": 4,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useMemo",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:react#useMemo:sequence:4",
+        "metadata": {
+          "line": 13,
+          "order": 4,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useMemo",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+        "id": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx->service:getProjectById@lib/creative-studio/getProjects.ts:calls:10",
+        "metadata": {
+          "argumentExpressions": ["params.projectId"],
+          "callee": "getProjectById",
+          "expression": "getProjectById(params.projectId)",
+          "kind": "internal",
+          "line": 10,
+          "resolved": true
+        },
+        "to": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "type": "calls"
+      },
+      {
+        "from": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+        "id": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx->service:getProjectById@lib/creative-studio/getProjects.ts:sequence:1",
+        "metadata": {
+          "line": 10,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx->component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "id": "service:getProjectById@lib/creative-studio/getProjects.ts->external:unknown#getProjects().find:calls:37",
+        "metadata": {
+          "argumentExpressions": ["(project) => project.id === id"],
+          "callee": "getProjects().find",
+          "expression": "getProjects().find((project) => project.id === id)",
+          "kind": "external",
+          "line": 37,
+          "resolved": false
+        },
+        "to": "external:unknown#getProjects().find",
+        "type": "calls"
+      },
+      {
+        "from": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "id": "service:getProjectById@lib/creative-studio/getProjects.ts->external:unknown#getProjects():sequence:1",
+        "metadata": {
+          "line": 37,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#getProjects()",
+        "type": "sequence"
+      },
+      {
+        "from": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "id": "service:getProjectById@lib/creative-studio/getProjects.ts->service:getProjects@lib/creative-studio/getProjects.ts:sequence:2",
+        "metadata": {
+          "line": 37,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "call"
+        },
+        "to": "service:getProjects@lib/creative-studio/getProjects.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx->service:getProjectById@lib/creative-studio/getProjects.ts:calls:14",
+        "metadata": {
+          "argumentExpressions": ["params.projectId"],
+          "callee": "getProjectById",
+          "expression": "getProjectById(params.projectId)",
+          "kind": "internal",
+          "line": 14,
+          "resolved": true
+        },
+        "to": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "type": "calls"
+      },
+      {
+        "from": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx->service:getProjectById@lib/creative-studio/getProjects.ts:sequence:1",
+        "metadata": {
+          "line": 14,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:ProjectGrid@features/creative-studio/ProjectGrid.tsx:renders",
+        "to": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:ProjectGrid@features/creative-studio/ProjectGrid.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "locale",
+              "value": "{locale}"
+            },
+            {
+              "name": "projects",
+              "value": "{projects}"
+            }
+          ],
+          "props": "locale={locale}, projects={projects}",
+          "target": "ProjectGrid"
+        },
+        "to": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx->component:ProjectGrid@features/creative-studio/ProjectGrid.tsx:sequence:3",
+        "metadata": {
+          "line": 24,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "render"
+        },
+        "to": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioPage@app/[locale]/studio/page.tsx",
+        "id": "component:StudioPage@app/[locale]/studio/page.tsx->component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx:renders",
+        "to": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioPage@app/[locale]/studio/page.tsx",
+        "id": "component:StudioPage@app/[locale]/studio/page.tsx->component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "locale",
+              "value": "{params.locale}"
+            },
+            {
+              "name": "projects",
+              "value": "{projects}"
+            }
+          ],
+          "props": "locale={params.locale}, projects={projects}",
+          "target": "CreativeStudioHome"
+        },
+        "to": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "service:getProjects@lib/creative-studio/getProjects.ts",
+        "id": "service:getProjects@lib/creative-studio/getProjects.ts->component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx:prop_source:projects:12",
+        "metadata": {
+          "callee": "getProjects",
+          "jsxValue": "{projects}",
+          "line": 12,
+          "passedFrom": "component:StudioPage@app/[locale]/studio/page.tsx",
+          "propName": "projects",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "getProjects",
+                "children": [
+                  {
+                    "expression": "getProjects",
+                    "kind": "identifier",
+                    "line": 10,
+                    "name": "getProjects"
+                  }
+                ],
+                "expression": "getProjects()",
+                "kind": "call",
+                "line": 10,
+                "name": "getProjects"
+              }
+            ],
+            "expression": "getProjects()",
+            "kind": "identifier",
+            "line": 10,
+            "name": "projects"
+          },
+          "targetComponent": "CreativeStudioHome"
+        },
+        "to": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "component:StudioPage@app/[locale]/studio/page.tsx",
+        "id": "component:StudioPage@app/[locale]/studio/page.tsx->component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx:sequence:2",
+        "metadata": {
+          "line": 12,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioLayout@app/[locale]/studio/layout.tsx",
+        "id": "component:StudioLayout@app/[locale]/studio/layout.tsx->component:StudioError@app/[locale]/studio/error.tsx:shows_error",
+        "metadata": {
+          "boundary": "error"
+        },
+        "to": "component:StudioError@app/[locale]/studio/error.tsx",
+        "type": "shows_error"
+      },
+      {
+        "from": "component:HomePage@app/page.tsx",
+        "id": "component:HomePage@app/page.tsx->component:Badge@components/primitives/Badge.tsx:renders",
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:HomePage@app/page.tsx",
+        "id": "component:HomePage@app/page.tsx->component:Badge@components/primitives/Badge.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "label",
+              "value": "\"home\""
+            }
+          ],
+          "props": "label=\"home\"",
+          "target": "Badge"
+        },
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:HomePage@app/page.tsx",
+        "id": "component:HomePage@app/page.tsx->component:Badge@components/primitives/Badge.tsx:sequence:1",
+        "metadata": {
+          "line": 9,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:RootLayout@app/layout.tsx",
+        "id": "component:RootLayout@app/layout.tsx->component:HomePage@app/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:HomePage@app/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->external:unknown#onSelect:calls:27",
+        "metadata": {
+          "argumentExpressions": ["layer.id"],
+          "callee": "onSelect",
+          "expression": "onSelect(layer.id)",
+          "kind": "external",
+          "line": 27,
+          "resolved": false
+        },
+        "to": "external:unknown#onSelect",
+        "type": "calls"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->external:unknown#onToggleVisibility:calls:40",
+        "metadata": {
+          "argumentExpressions": ["layer.id"],
+          "callee": "onToggleVisibility",
+          "expression": "onToggleVisibility(layer.id)",
+          "kind": "external",
+          "line": 40,
+          "resolved": false
+        },
+        "to": "external:unknown#onToggleVisibility",
+        "type": "calls"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->external:unknown#onToggleLock:calls:47",
+        "metadata": {
+          "argumentExpressions": ["layer.id"],
+          "callee": "onToggleLock",
+          "expression": "onToggleLock(layer.id)",
+          "kind": "external",
+          "line": 47,
+          "resolved": false
+        },
+        "to": "external:unknown#onToggleLock",
+        "type": "calls"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->external:unknown#onSelect:sequence:2",
+        "metadata": {
+          "line": 27,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#onSelect",
+        "type": "sequence"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->external:unknown#onToggleVisibility:sequence:8",
+        "metadata": {
+          "line": 40,
+          "order": 8,
+          "sequenceRank": 5,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#onToggleVisibility",
+        "type": "sequence"
+      },
+      {
+        "from": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx->external:unknown#onToggleLock:sequence:10",
+        "metadata": {
+          "line": 47,
+          "order": 10,
+          "sequenceRank": 6,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#onToggleLock",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->function:LayerItem@features/creative-studio/LayerItem.tsx:prop_source:onSelect:37",
+        "metadata": {
+          "callee": "useLayerSelection",
+          "jsxValue": "{selectLayer}",
+          "line": 37,
+          "passedFrom": "component:LayerList@features/creative-studio/LayerList.tsx",
+          "propName": "onSelect",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useLayerSelection",
+                "children": [
+                  {
+                    "callee": "useLayerSelection",
+                    "expression": "useLayerSelection",
+                    "kind": "hook_call",
+                    "line": 19,
+                    "name": "useLayerSelection"
+                  }
+                ],
+                "expression": "useLayerSelection()",
+                "kind": "hook_call",
+                "line": 19,
+                "name": "useLayerSelection"
+              }
+            ],
+            "expression": "selectLayer ← useLayerSelection()",
+            "kind": "destructure",
+            "line": 19,
+            "name": "selectLayer"
+          },
+          "targetComponent": "LayerItem"
+        },
+        "to": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#window.matchMedia:calls:12",
+        "metadata": {
+          "argumentExpressions": ["MOBILE_QUERY"],
+          "callee": "window.matchMedia",
+          "expression": "window.matchMedia(MOBILE_QUERY)",
+          "kind": "external",
+          "line": 12,
+          "resolved": false
+        },
+        "to": "external:unknown#window.matchMedia",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#setIsMobile:calls:13",
+        "metadata": {
+          "argumentExpressions": ["media.matches"],
+          "callee": "setIsMobile",
+          "expression": "setIsMobile(media.matches)",
+          "kind": "external",
+          "line": 13,
+          "resolved": false
+        },
+        "to": "external:unknown#setIsMobile",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#onChange:calls:15",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "onChange",
+          "expression": "onChange()",
+          "kind": "external",
+          "line": 15,
+          "resolved": false
+        },
+        "to": "external:unknown#onChange",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#media.addEventListener:calls:16",
+        "metadata": {
+          "argumentExpressions": ["\"change\"", "onChange"],
+          "callee": "media.addEventListener",
+          "expression": "media.addEventListener(\"change\", onChange)",
+          "kind": "external",
+          "line": 16,
+          "resolved": false
+        },
+        "to": "external:unknown#media.addEventListener",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#media.removeEventListener:calls:17",
+        "metadata": {
+          "argumentExpressions": ["\"change\"", "onChange"],
+          "callee": "media.removeEventListener",
+          "expression": "media.removeEventListener(\"change\", onChange)",
+          "kind": "external",
+          "line": 17,
+          "resolved": false
+        },
+        "to": "external:unknown#media.removeEventListener",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:react#useState:sequence:1",
+        "metadata": {
+          "line": 9,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useState",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:react#useEffect:sequence:2",
+        "metadata": {
+          "line": 11,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useEffect",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#window:sequence:3",
+        "metadata": {
+          "line": 12,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#window",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#setIsMobile:sequence:4",
+        "metadata": {
+          "line": 13,
+          "order": 4,
+          "sequenceRank": 4,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#setIsMobile",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#onChange:sequence:5",
+        "metadata": {
+          "line": 15,
+          "order": 5,
+          "sequenceRank": 5,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#onChange",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts->external:unknown#media:sequence:6",
+        "metadata": {
+          "line": 16,
+          "order": 6,
+          "sequenceRank": 6,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#media",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#layers.find:calls:14",
+        "metadata": {
+          "argumentExpressions": ["(layer) => layer.id === activeLayerId"],
+          "callee": "layers.find",
+          "expression": "layers.find((layer) => layer.id === activeLayerId)",
+          "kind": "external",
+          "line": 14,
+          "resolved": false
+        },
+        "to": "external:unknown#layers.find",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#layers.filter:calls:19",
+        "metadata": {
+          "argumentExpressions": ["(layer) => layer.visible"],
+          "callee": "layers.filter",
+          "expression": "layers.filter((layer) => layer.visible)",
+          "kind": "external",
+          "line": 19,
+          "resolved": false
+        },
+        "to": "external:unknown#layers.filter",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#layers.findIndex:calls:27",
+        "metadata": {
+          "argumentExpressions": ["(layer) => layer.id === activeLayerId"],
+          "callee": "layers.findIndex",
+          "expression": "layers.findIndex((layer) => layer.id === activeLayerId)",
+          "kind": "external",
+          "line": 27,
+          "resolved": false
+        },
+        "to": "external:unknown#layers.findIndex",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#selectLayer:calls:30",
+        "metadata": {
+          "argumentExpressions": ["next.id"],
+          "callee": "selectLayer",
+          "expression": "selectLayer(next.id)",
+          "kind": "external",
+          "line": 30,
+          "resolved": false
+        },
+        "to": "external:unknown#selectLayer",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#layers.findIndex:calls:38",
+        "metadata": {
+          "argumentExpressions": ["(layer) => layer.id === activeLayerId"],
+          "callee": "layers.findIndex",
+          "expression": "layers.findIndex((layer) => layer.id === activeLayerId)",
+          "kind": "external",
+          "line": 38,
+          "resolved": false
+        },
+        "to": "external:unknown#layers.findIndex",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#selectLayer:calls:41",
+        "metadata": {
+          "argumentExpressions": ["prev.id"],
+          "callee": "selectLayer",
+          "expression": "selectLayer(prev.id)",
+          "kind": "external",
+          "line": 41,
+          "resolved": false
+        },
+        "to": "external:unknown#selectLayer",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#layers:sequence:5",
+        "metadata": {
+          "line": 14,
+          "order": 5,
+          "sequenceRank": 3,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#layers",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts->external:unknown#selectLayer:sequence:12",
+        "metadata": {
+          "line": 30,
+          "order": 12,
+          "sequenceRank": 5,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#selectLayer",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->hook:useLayerSelection@hooks/useLayerSelection.ts:uses_hook",
+        "to": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->hook:useLayerSelection@hooks/useLayerSelection.ts:sequence:3",
+        "metadata": {
+          "line": 12,
+          "order": 3,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->builtin:setTimeout:calls:10",
+        "metadata": {
+          "argumentExpressions": ["() => setDebounced(value)", "delayMs"],
+          "callee": "setTimeout",
+          "expression": "setTimeout(() => setDebounced(value), delayMs)",
+          "kind": "builtin",
+          "line": 10,
+          "resolved": false
+        },
+        "to": "builtin:setTimeout",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->external:unknown#setDebounced:calls:10",
+        "metadata": {
+          "argumentExpressions": ["value"],
+          "callee": "setDebounced",
+          "expression": "setDebounced(value)",
+          "kind": "external",
+          "line": 10,
+          "resolved": false
+        },
+        "to": "external:unknown#setDebounced",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->external:unknown#clearTimeout:calls:11",
+        "metadata": {
+          "argumentExpressions": ["timer"],
+          "callee": "clearTimeout",
+          "expression": "clearTimeout(timer)",
+          "kind": "external",
+          "line": 11,
+          "resolved": false
+        },
+        "to": "external:unknown#clearTimeout",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->external:react#useState:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useState",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->external:react#useEffect:sequence:2",
+        "metadata": {
+          "line": 9,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useEffect",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->builtin:setTimeout:sequence:3",
+        "metadata": {
+          "line": 10,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "call"
+        },
+        "to": "builtin:setTimeout",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->external:unknown#setDebounced:sequence:4",
+        "metadata": {
+          "line": 10,
+          "order": 4,
+          "sequenceRank": 4,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#setDebounced",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts->external:unknown#clearTimeout:sequence:5",
+        "metadata": {
+          "line": 11,
+          "order": 5,
+          "sequenceRank": 5,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#clearTimeout",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#event.preventDefault:calls:26",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "event.preventDefault",
+          "expression": "event.preventDefault()",
+          "kind": "external",
+          "line": 26,
+          "resolved": false
+        },
+        "to": "external:unknown#event.preventDefault",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#selectNext:calls:27",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "selectNext",
+          "expression": "selectNext()",
+          "kind": "external",
+          "line": 27,
+          "resolved": false
+        },
+        "to": "external:unknown#selectNext",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#event.preventDefault:calls:32",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "event.preventDefault",
+          "expression": "event.preventDefault()",
+          "kind": "external",
+          "line": 32,
+          "resolved": false
+        },
+        "to": "external:unknown#event.preventDefault",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#selectPrevious:calls:33",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "selectPrevious",
+          "expression": "selectPrevious()",
+          "kind": "external",
+          "line": 33,
+          "resolved": false
+        },
+        "to": "external:unknown#selectPrevious",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#event.preventDefault:calls:38",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "event.preventDefault",
+          "expression": "event.preventDefault()",
+          "kind": "external",
+          "line": 38,
+          "resolved": false
+        },
+        "to": "external:unknown#event.preventDefault",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#event.preventDefault:calls:44",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "event.preventDefault",
+          "expression": "event.preventDefault()",
+          "kind": "external",
+          "line": 44,
+          "resolved": false
+        },
+        "to": "external:unknown#event.preventDefault",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#window.addEventListener:calls:49",
+        "metadata": {
+          "argumentExpressions": ["\"keydown\"", "onKeyDown"],
+          "callee": "window.addEventListener",
+          "expression": "window.addEventListener(\"keydown\", onKeyDown)",
+          "kind": "external",
+          "line": 49,
+          "resolved": false
+        },
+        "to": "external:unknown#window.addEventListener",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#window.removeEventListener:calls:50",
+        "metadata": {
+          "argumentExpressions": ["\"keydown\"", "onKeyDown"],
+          "callee": "window.removeEventListener",
+          "expression": "window.removeEventListener(\"keydown\", onKeyDown)",
+          "kind": "external",
+          "line": 50,
+          "resolved": false
+        },
+        "to": "external:unknown#window.removeEventListener",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:react#useRef:sequence:4",
+        "metadata": {
+          "line": 13,
+          "order": 4,
+          "sequenceRank": 3,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useRef",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:react#useEffect:sequence:5",
+        "metadata": {
+          "line": 15,
+          "order": 5,
+          "sequenceRank": 4,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useEffect",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#event:sequence:9",
+        "metadata": {
+          "line": 26,
+          "order": 9,
+          "sequenceRank": 5,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#event",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#selectNext:sequence:10",
+        "metadata": {
+          "line": 27,
+          "order": 10,
+          "sequenceRank": 6,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#selectNext",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#selectPrevious:sequence:13",
+        "metadata": {
+          "line": 33,
+          "order": 13,
+          "sequenceRank": 7,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#selectPrevious",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts->external:unknown#window:sequence:20",
+        "metadata": {
+          "line": 49,
+          "order": 20,
+          "sequenceRank": 9,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#window",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->function:WorkspaceContext@context/WorkspaceProvider.tsx:renders",
+        "to": "function:WorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->function:WorkspaceContext@context/WorkspaceProvider.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "value",
+              "value": "{value}"
+            }
+          ],
+          "props": "value={value}",
+          "target": "WorkspaceContext"
+        },
+        "to": "function:WorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->external:unknown#resetStore:calls:36",
+        "metadata": {
+          "argumentExpressions": ["\"select\""],
+          "callee": "resetStore",
+          "expression": "resetStore(\"select\")",
+          "kind": "external",
+          "line": 36,
+          "resolved": false
+        },
+        "to": "external:unknown#resetStore",
+        "type": "calls"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->external:unknown#resetStore:sequence:3",
+        "metadata": {
+          "line": 36,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#resetStore",
+        "type": "sequence"
+      },
+      {
+        "from": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx->function:WorkspaceContext@context/WorkspaceProvider.tsx:sequence:6",
+        "metadata": {
+          "line": 52,
+          "order": 6,
+          "sequenceRank": 5,
+          "stepKind": "render"
+        },
+        "to": "function:WorkspaceContext@context/WorkspaceProvider.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx->component:WorkspaceProvider@context/WorkspaceProvider.tsx:renders",
+        "to": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx->component:WorkspaceProvider@context/WorkspaceProvider.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "locale",
+              "value": "{params.locale}"
+            },
+            {
+              "name": "projectId",
+              "value": "{params.projectId}"
+            },
+            {
+              "name": "projectName",
+              "value": "{project?.name ?? \"Unknown\"}"
+            }
+          ],
+          "props": "locale={params.locale}, projectId={params.projectId}, projectName={project?.name ?? \"Unknown\"}",
+          "target": "WorkspaceProvider"
+        },
+        "to": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx->component:WorkspaceProvider@context/WorkspaceProvider.tsx:sequence:2",
+        "metadata": {
+          "line": 17,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useCounter@hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts->hook:useToggle@hooks/useToggle.ts:uses_hook",
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useCounter@hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts->external:unknown#setCount:calls:12",
+        "metadata": {
+          "argumentExpressions": ["(value) => value + 1"],
+          "callee": "setCount",
+          "expression": "setCount((value) => value + 1)",
+          "kind": "external",
+          "line": 12,
+          "resolved": false
+        },
+        "to": "external:unknown#setCount",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useCounter@hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts->external:unknown#setCount:calls:18",
+        "metadata": {
+          "argumentExpressions": ["(value) => value - 1"],
+          "callee": "setCount",
+          "expression": "setCount((value) => value - 1)",
+          "kind": "external",
+          "line": 18,
+          "resolved": false
+        },
+        "to": "external:unknown#setCount",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useCounter@hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts->external:react#useState:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useState",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useCounter@hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts->hook:useToggle@hooks/useToggle.ts:sequence:2",
+        "metadata": {
+          "line": 8,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useCounter@hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts->external:unknown#setCount:sequence:5",
+        "metadata": {
+          "line": 12,
+          "order": 5,
+          "sequenceRank": 4,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#setCount",
+        "type": "sequence"
+      },
+      {
+        "from": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx->hook:useCounter@hooks/useCounter.ts:uses_hook",
+        "to": "hook:useCounter@hooks/useCounter.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx->hook:useCounter@hooks/useCounter.ts:sequence:1",
+        "metadata": {
+          "line": 11,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "hook:useCounter@hooks/useCounter.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts->hook:useCounter@hooks/useCounter.ts:uses_hook",
+        "to": "hook:useCounter@hooks/useCounter.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts->hook:useCounter@hooks/useCounter.ts:sequence:2",
+        "metadata": {
+          "line": 8,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "hook"
+        },
+        "to": "hook:useCounter@hooks/useCounter.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useToggle@hooks/useToggle.ts",
+        "id": "hook:useToggle@hooks/useToggle.ts->external:unknown#setOn:calls:6",
+        "metadata": {
+          "argumentExpressions": ["(value) => !value"],
+          "callee": "setOn",
+          "expression": "setOn((value) => !value)",
+          "kind": "external",
+          "line": 6,
+          "resolved": false
+        },
+        "to": "external:unknown#setOn",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useToggle@hooks/useToggle.ts",
+        "id": "hook:useToggle@hooks/useToggle.ts->external:react#useState:sequence:1",
+        "metadata": {
+          "line": 5,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "external:react#useState",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useToggle@hooks/useToggle.ts",
+        "id": "hook:useToggle@hooks/useToggle.ts->external:unknown#setOn:sequence:2",
+        "metadata": {
+          "line": 6,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#setOn",
+        "type": "sequence"
+      },
+      {
+        "from": "component:SettingsPage@app/dashboard/settings/page.tsx",
+        "id": "component:SettingsPage@app/dashboard/settings/page.tsx->hook:useToggle@hooks/useToggle.ts:uses_hook",
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:SettingsPage@app/dashboard/settings/page.tsx",
+        "id": "component:SettingsPage@app/dashboard/settings/page.tsx->hook:useToggle@hooks/useToggle.ts:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StatTile@components/dashboard/StatTile.tsx",
+        "id": "component:StatTile@components/dashboard/StatTile.tsx->hook:useToggle@hooks/useToggle.ts:uses_hook",
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:StatTile@components/dashboard/StatTile.tsx",
+        "id": "component:StatTile@components/dashboard/StatTile.tsx->hook:useToggle@hooks/useToggle.ts:sequence:1",
+        "metadata": {
+          "line": 11,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts->hook:useToggle@hooks/useToggle.ts:uses_hook",
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts->hook:useToggle@hooks/useToggle.ts:sequence:3",
+        "metadata": {
+          "line": 9,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "hook"
+        },
+        "to": "hook:useToggle@hooks/useToggle.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "id": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx->function:ProjectCard@features/creative-studio/ProjectCard.tsx:renders",
+        "to": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "id": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx->function:ProjectCard@features/creative-studio/ProjectCard.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "key",
+              "value": "{project.id}"
+            },
+            {
+              "name": "locale",
+              "value": "{locale}"
+            },
+            {
+              "name": "project",
+              "value": "{project}"
+            }
+          ],
+          "props": "key={project.id}, locale={locale}, project={project}",
+          "target": "ProjectCard"
+        },
+        "to": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "id": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx->function:ProjectCard@features/creative-studio/ProjectCard.tsx:sequence:2",
+        "metadata": {
+          "line": 16,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx->component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx:shows_loading",
+        "metadata": {
+          "boundary": "suspense"
+        },
+        "to": "component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx",
+        "type": "shows_loading"
+      },
+      {
+        "from": "component:StudioLayout@app/[locale]/studio/layout.tsx",
+        "id": "component:StudioLayout@app/[locale]/studio/layout.tsx->component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "component:StudioPage@app/[locale]/studio/page.tsx",
+        "id": "component:StudioPage@app/[locale]/studio/page.tsx->service:getProjects@lib/creative-studio/getProjects.ts:calls:10",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "getProjects",
+          "expression": "getProjects()",
+          "kind": "internal",
+          "line": 10,
+          "resolved": true
+        },
+        "to": "service:getProjects@lib/creative-studio/getProjects.ts",
+        "type": "calls"
+      },
+      {
+        "from": "component:StudioPage@app/[locale]/studio/page.tsx",
+        "id": "component:StudioPage@app/[locale]/studio/page.tsx->service:getProjects@lib/creative-studio/getProjects.ts:sequence:1",
+        "metadata": {
+          "line": 10,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "service:getProjects@lib/creative-studio/getProjects.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "id": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx->external:unknown#projects.map:calls:15",
+        "metadata": {
+          "argumentExpressions": [
+            "(project) => (\n          <ProjectCard key={project.id} locale={locale} project={project} />\n        )"
+          ],
+          "callee": "projects.map",
+          "expression": "projects.map((project) => (\n          <ProjectCard key={project.id} locale={locale} project={project} />\n        ))",
+          "kind": "external",
+          "line": 15,
+          "resolved": false
+        },
+        "to": "external:unknown#projects.map",
+        "type": "calls"
+      },
+      {
+        "from": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "id": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx->external:unknown#projects:sequence:1",
+        "metadata": {
+          "line": 15,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#projects",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioLayout@app/[locale]/studio/layout.tsx",
+        "id": "component:StudioLayout@app/[locale]/studio/layout.tsx->component:StudioPage@app/[locale]/studio/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:StudioPage@app/[locale]/studio/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioLayout@app/[locale]/studio/layout.tsx",
+        "id": "component:StudioLayout@app/[locale]/studio/layout.tsx->component:StudioLoading@app/[locale]/studio/loading.tsx:shows_loading",
+        "metadata": {
+          "boundary": "suspense"
+        },
+        "to": "component:StudioLoading@app/[locale]/studio/loading.tsx",
+        "type": "shows_loading"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:StudioLayout@app/[locale]/studio/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:StudioLayout@app/[locale]/studio/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "component:InfoCard@components/cards/InfoCard.tsx",
+        "id": "component:InfoCard@components/cards/InfoCard.tsx->component:Badge@components/primitives/Badge.tsx:renders",
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:InfoCard@components/cards/InfoCard.tsx",
+        "id": "component:InfoCard@components/cards/InfoCard.tsx->component:Badge@components/primitives/Badge.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "label",
+              "value": "{badge}"
+            }
+          ],
+          "props": "label={badge}",
+          "target": "Badge"
+        },
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:InfoCard@components/cards/InfoCard.tsx",
+        "id": "component:InfoCard@components/cards/InfoCard.tsx->component:Badge@components/primitives/Badge.tsx:sequence:2",
+        "metadata": {
+          "line": 15,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StatTile@components/dashboard/StatTile.tsx",
+        "id": "component:StatTile@components/dashboard/StatTile.tsx->component:Badge@components/primitives/Badge.tsx:renders",
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StatTile@components/dashboard/StatTile.tsx",
+        "id": "component:StatTile@components/dashboard/StatTile.tsx->component:Badge@components/primitives/Badge.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "label",
+              "value": "{label}"
+            }
+          ],
+          "props": "label={label}",
+          "target": "Badge"
+        },
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:StatTile@components/dashboard/StatTile.tsx",
+        "id": "component:StatTile@components/dashboard/StatTile.tsx->component:Badge@components/primitives/Badge.tsx:sequence:2",
+        "metadata": {
+          "line": 15,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:Badge@components/primitives/Badge.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:RootLayout@app/layout.tsx",
+        "id": "component:RootLayout@app/layout.tsx->component:LocaleLayout@app/[locale]/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "component:RootLayout@app/layout.tsx",
+        "id": "component:RootLayout@app/layout.tsx->component:AboutPage@app/about/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:AboutPage@app/about/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:RootLayout@app/layout.tsx",
+        "id": "component:RootLayout@app/layout.tsx->component:DashboardLayout@app/dashboard/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:DashboardLayout@app/dashboard/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/",
+        "id": "route:/->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/[locale]",
+        "id": "route:/[locale]->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/[locale]/blogs/[slug]",
+        "id": "route:/[locale]/blogs/[slug]->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/[locale]/studio",
+        "id": "route:/[locale]/studio->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/[locale]/studio/[projectId]",
+        "id": "route:/[locale]/studio/[projectId]->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/about",
+        "id": "route:/about->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/dashboard",
+        "id": "route:/dashboard->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "route:/dashboard/settings",
+        "id": "route:/dashboard/settings->component:RootLayout@app/layout.tsx:wraps",
+        "metadata": {
+          "segmentRole": "layout"
+        },
+        "to": "component:RootLayout@app/layout.tsx",
+        "type": "wraps"
+      },
+      {
+        "from": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx->component:StatTile@components/dashboard/StatTile.tsx:renders",
+        "to": "component:StatTile@components/dashboard/StatTile.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx->component:StatTile@components/dashboard/StatTile.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "key",
+              "value": "{stat.id}"
+            },
+            {
+              "name": "label",
+              "value": "{stat.label}"
+            },
+            {
+              "name": "value",
+              "value": "{stat.value}"
+            }
+          ],
+          "props": "key={stat.id}, label={stat.label}, value={stat.value}",
+          "target": "StatTile"
+        },
+        "to": "component:StatTile@components/dashboard/StatTile.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx->external:unknown#stats.map:calls:27",
+        "metadata": {
+          "argumentExpressions": [
+            "(stat) => (\n        <StatTile key={stat.id} label={stat.label} value={stat.value} />\n      )"
+          ],
+          "callee": "stats.map",
+          "expression": "stats.map((stat) => (\n        <StatTile key={stat.id} label={stat.label} value={stat.value} />\n      ))",
+          "kind": "external",
+          "line": 27,
+          "resolved": false
+        },
+        "to": "external:unknown#stats.map",
+        "type": "calls"
+      },
+      {
+        "from": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx->external:unknown#stats:sequence:3",
+        "metadata": {
+          "line": 27,
+          "order": 3,
+          "sequenceRank": 2,
+          "stepKind": "call"
+        },
+        "to": "external:unknown#stats",
+        "type": "sequence"
+      },
+      {
+        "from": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx->component:StatTile@components/dashboard/StatTile.tsx:sequence:4",
+        "metadata": {
+          "line": 28,
+          "order": 4,
+          "sequenceRank": 3,
+          "stepKind": "render"
+        },
+        "to": "component:StatTile@components/dashboard/StatTile.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->component:DashboardStats@components/dashboard/DashboardStats.tsx:renders",
+        "to": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->component:DashboardStats@components/dashboard/DashboardStats.tsx:passes_prop:1",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "stats",
+              "value": "{stats}"
+            }
+          ],
+          "props": "stats={stats}",
+          "target": "DashboardStats"
+        },
+        "to": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts->component:DashboardStats@components/dashboard/DashboardStats.tsx:prop_source:stats:12",
+        "metadata": {
+          "callee": "useDashboardData",
+          "jsxValue": "{stats}",
+          "line": 12,
+          "passedFrom": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+          "propName": "stats",
+          "sourceFlow": {
+            "children": [
+              {
+                "callee": "useDashboardData",
+                "children": [
+                  {
+                    "callee": "useDashboardData",
+                    "expression": "useDashboardData",
+                    "kind": "hook_call",
+                    "line": 7,
+                    "name": "useDashboardData"
+                  }
+                ],
+                "expression": "useDashboardData()",
+                "kind": "hook_call",
+                "line": 7,
+                "name": "useDashboardData"
+              }
+            ],
+            "expression": "stats ← useDashboardData()",
+            "kind": "destructure",
+            "line": 7,
+            "name": "stats"
+          },
+          "targetComponent": "DashboardStats"
+        },
+        "to": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "type": "prop_source"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->component:DashboardStats@components/dashboard/DashboardStats.tsx:sequence:3",
+        "metadata": {
+          "line": 12,
+          "order": 3,
+          "sequenceRank": 3,
+          "stepKind": "render"
+        },
+        "to": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts->service:getStats@lib/dashboard/getStats.ts:calls:7",
+        "metadata": {
+          "argumentExpressions": [],
+          "callee": "getStats",
+          "expression": "getStats()",
+          "kind": "internal",
+          "line": 7,
+          "resolved": true
+        },
+        "to": "service:getStats@lib/dashboard/getStats.ts",
+        "type": "calls"
+      },
+      {
+        "from": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts->service:getStats@lib/dashboard/getStats.ts:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "call"
+        },
+        "to": "service:getStats@lib/dashboard/getStats.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->hook:useDashboardData@hooks/useDashboardData.ts:uses_hook",
+        "to": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "type": "uses_hook"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->hook:useDashboardData@hooks/useDashboardData.ts:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "hook"
+        },
+        "to": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "type": "sequence"
+      },
+      {
+        "from": "component:DashboardLayout@app/dashboard/layout.tsx",
+        "id": "component:DashboardLayout@app/dashboard/layout.tsx->component:SettingsPage@app/dashboard/settings/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:SettingsPage@app/dashboard/settings/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx",
+        "id": "component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx->component:Skeleton@components/ui/skeleton.tsx:renders",
+        "to": "component:Skeleton@components/ui/skeleton.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx",
+        "id": "component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx->component:Skeleton@components/ui/skeleton.tsx:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:Skeleton@components/ui/skeleton.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:StudioLoading@app/[locale]/studio/loading.tsx",
+        "id": "component:StudioLoading@app/[locale]/studio/loading.tsx->component:Skeleton@components/ui/skeleton.tsx:renders",
+        "to": "component:Skeleton@components/ui/skeleton.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:StudioLoading@app/[locale]/studio/loading.tsx",
+        "id": "component:StudioLoading@app/[locale]/studio/loading.tsx->component:Skeleton@components/ui/skeleton.tsx:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:Skeleton@components/ui/skeleton.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:LocaleHomePage@app/[locale]/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:LocaleHomePage@app/[locale]/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:Loading@app/[locale]/blogs/[slug]/loading.tsx:shows_loading",
+        "metadata": {
+          "boundary": "suspense"
+        },
+        "to": "component:Loading@app/[locale]/blogs/[slug]/loading.tsx",
+        "type": "shows_loading"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:ErrorPage@app/[locale]/blogs/[slug]/error.tsx:shows_error",
+        "metadata": {
+          "boundary": "error"
+        },
+        "to": "component:ErrorPage@app/[locale]/blogs/[slug]/error.tsx",
+        "type": "shows_error"
+      },
+      {
+        "from": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx->component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:InfoCard@components/cards/InfoCard.tsx",
+        "id": "component:InfoCard@components/cards/InfoCard.tsx->component:Icon@components/primitives/Icon.tsx:renders",
+        "to": "component:Icon@components/primitives/Icon.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:InfoCard@components/cards/InfoCard.tsx",
+        "id": "component:InfoCard@components/cards/InfoCard.tsx->component:Icon@components/primitives/Icon.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "name",
+              "value": "\"star\""
+            }
+          ],
+          "props": "name=\"star\"",
+          "target": "Icon"
+        },
+        "to": "component:Icon@components/primitives/Icon.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:InfoCard@components/cards/InfoCard.tsx",
+        "id": "component:InfoCard@components/cards/InfoCard.tsx->component:Icon@components/primitives/Icon.tsx:sequence:1",
+        "metadata": {
+          "line": 13,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:Icon@components/primitives/Icon.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:LocaleHomePage@app/[locale]/page.tsx",
+        "id": "component:LocaleHomePage@app/[locale]/page.tsx->component:InfoCard@components/cards/InfoCard.tsx:renders",
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:LocaleHomePage@app/[locale]/page.tsx",
+        "id": "component:LocaleHomePage@app/[locale]/page.tsx->component:InfoCard@components/cards/InfoCard.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "title",
+              "value": "{`Locale ${params.locale}`}"
+            },
+            {
+              "name": "badge",
+              "value": "{params.locale}"
+            }
+          ],
+          "props": "title={`Locale ${params.locale}`}, badge={params.locale}",
+          "target": "InfoCard"
+        },
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:LocaleHomePage@app/[locale]/page.tsx",
+        "id": "component:LocaleHomePage@app/[locale]/page.tsx->component:InfoCard@components/cards/InfoCard.tsx:sequence:1",
+        "metadata": {
+          "line": 11,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:AboutPage@app/about/page.tsx",
+        "id": "component:AboutPage@app/about/page.tsx->component:InfoCard@components/cards/InfoCard.tsx:renders",
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:AboutPage@app/about/page.tsx",
+        "id": "component:AboutPage@app/about/page.tsx->component:InfoCard@components/cards/InfoCard.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "title",
+              "value": "\"About trace examples\""
+            },
+            {
+              "name": "badge",
+              "value": "\"static\""
+            }
+          ],
+          "props": "title=\"About trace examples\", badge=\"static\"",
+          "target": "InfoCard"
+        },
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:AboutPage@app/about/page.tsx",
+        "id": "component:AboutPage@app/about/page.tsx->component:InfoCard@components/cards/InfoCard.tsx:sequence:1",
+        "metadata": {
+          "line": 7,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->component:InfoCard@components/cards/InfoCard.tsx:renders",
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->component:InfoCard@components/cards/InfoCard.tsx:passes_prop:0",
+        "metadata": {
+          "attributes": [
+            {
+              "name": "title",
+              "value": "\"Dashboard\""
+            },
+            {
+              "name": "badge",
+              "value": "\"live\""
+            }
+          ],
+          "props": "title=\"Dashboard\", badge=\"live\"",
+          "target": "InfoCard"
+        },
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "passes_prop"
+      },
+      {
+        "from": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx->component:InfoCard@components/cards/InfoCard.tsx:sequence:2",
+        "metadata": {
+          "line": 11,
+          "order": 2,
+          "sequenceRank": 2,
+          "stepKind": "render"
+        },
+        "to": "component:InfoCard@components/cards/InfoCard.tsx",
+        "type": "sequence"
+      },
+      {
+        "from": "component:DashboardLayout@app/dashboard/layout.tsx",
+        "id": "component:DashboardLayout@app/dashboard/layout.tsx->component:DashboardPage@app/dashboard/page.tsx:renders",
+        "metadata": {
+          "segmentRole": "page"
+        },
+        "to": "component:DashboardPage@app/dashboard/page.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:DashboardPage@app/dashboard/page.tsx",
+        "id": "component:DashboardPage@app/dashboard/page.tsx->component:DashboardShell@components/dashboard/DashboardShell.tsx:renders",
+        "to": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "type": "renders"
+      },
+      {
+        "from": "component:DashboardPage@app/dashboard/page.tsx",
+        "id": "component:DashboardPage@app/dashboard/page.tsx->component:DashboardShell@components/dashboard/DashboardShell.tsx:sequence:1",
+        "metadata": {
+          "line": 13,
+          "order": 1,
+          "sequenceRank": 1,
+          "stepKind": "render"
+        },
+        "to": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "type": "sequence"
+      }
+    ],
+    "nodes": [
+      {
+        "filePath": "features/creative-studio/WorkspaceShell.tsx",
+        "id": "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+        "label": "WorkspaceShell",
+        "type": "component"
+      },
+      {
+        "filePath": "features/creative-studio/StudioToolbar.tsx",
+        "id": "component:StudioToolbar@features/creative-studio/StudioToolbar.tsx",
+        "label": "StudioToolbar",
+        "type": "component"
+      },
+      {
+        "filePath": "features/creative-studio/WorkspaceSidebar.tsx",
+        "id": "component:WorkspaceSidebar@features/creative-studio/WorkspaceSidebar.tsx",
+        "label": "WorkspaceSidebar",
+        "type": "component"
+      },
+      {
+        "filePath": "features/creative-studio/WorkspaceCanvas.tsx",
+        "id": "component:WorkspaceCanvas@features/creative-studio/WorkspaceCanvas.tsx",
+        "label": "WorkspaceCanvas",
+        "type": "component"
+      },
+      {
+        "filePath": "features/creative-studio/StudioProjectView.tsx",
+        "id": "component:StudioProjectView@features/creative-studio/StudioProjectView.tsx",
+        "label": "StudioProjectView",
+        "type": "component"
+      },
+      {
+        "filePath": "features/creative-studio/StudioToolbar.tsx",
+        "id": "component:BadgeCompact@features/creative-studio/StudioToolbar.tsx",
+        "label": "BadgeCompact",
+        "type": "component"
+      },
+      {
+        "filePath": "components/ui/separator.tsx",
+        "id": "component:Separator@components/ui/separator.tsx",
+        "label": "Separator",
+        "type": "component"
+      },
+      {
+        "filePath": "components/ui/button.tsx",
+        "id": "component:Button@components/ui/button.tsx",
+        "label": "Button",
+        "type": "component"
+      },
+      {
+        "filePath": "context/WorkspaceProvider.tsx",
+        "id": "hook:useWorkspaceContext@context/WorkspaceProvider.tsx",
+        "label": "useWorkspaceContext",
+        "type": "hook"
+      },
+      {
+        "filePath": "hooks/useWorkspace.ts",
+        "id": "hook:useWorkspace@hooks/useWorkspace.ts",
+        "label": "useWorkspace",
+        "type": "hook"
+      },
+      {
+        "filePath": "stores/useWorkspaceStore.ts",
+        "id": "function:useWorkspaceStore@stores/useWorkspaceStore.ts",
+        "label": "useWorkspaceStore",
+        "type": "function"
+      },
+      {
+        "id": "external:unknown#setZoom",
+        "label": "unknown · setZoom",
+        "type": "external"
+      },
+      {
+        "id": "external:react#useCallback",
+        "label": "react · useCallback",
+        "type": "external"
+      },
+      {
+        "filePath": "features/creative-studio/ToolPalette.tsx",
+        "id": "component:ToolPalette@features/creative-studio/ToolPalette.tsx",
+        "label": "ToolPalette",
+        "type": "component"
+      },
+      {
+        "filePath": "features/creative-studio/LayerList.tsx",
+        "id": "component:LayerList@features/creative-studio/LayerList.tsx",
+        "label": "LayerList",
+        "type": "component"
+      },
+      {
+        "filePath": "components/ui/card.tsx",
+        "id": "component:Card@components/ui/card.tsx",
+        "label": "Card",
+        "type": "component"
+      },
+      {
+        "filePath": "components/ui/card.tsx",
+        "id": "component:CardHeader@components/ui/card.tsx",
+        "label": "CardHeader",
+        "type": "component"
+      },
+      {
+        "filePath": "components/ui/card.tsx",
+        "id": "component:CardTitle@components/ui/card.tsx",
+        "label": "CardTitle",
+        "type": "component"
+      },
+      {
+        "filePath": "components/ui/badge.tsx",
+        "id": "component:Badge@components/ui/badge.tsx",
+        "label": "Badge",
+        "type": "component"
+      },
+      {
+        "filePath": "components/ui/card.tsx",
+        "id": "component:CardContent@components/ui/card.tsx",
+        "label": "CardContent",
+        "type": "component"
+      },
+      {
+        "id": "external:react#useMemo",
+        "label": "react · useMemo",
+        "type": "external"
+      },
+      {
+        "filePath": "app/[locale]/studio/[projectId]/page.tsx",
+        "id": "component:ProjectPage@app/[locale]/studio/[projectId]/page.tsx",
+        "label": "ProjectPage",
+        "type": "component"
+      },
+      {
+        "filePath": "lib/creative-studio/getProjects.ts",
+        "id": "service:getProjectById@lib/creative-studio/getProjects.ts",
+        "label": "getProjectById",
+        "type": "service"
+      },
+      {
+        "filePath": "features/creative-studio/CreativeStudioHome.tsx",
+        "id": "component:CreativeStudioHome@features/creative-studio/CreativeStudioHome.tsx",
+        "label": "CreativeStudioHome",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/studio/error.tsx",
+        "id": "component:StudioError@app/[locale]/studio/error.tsx",
+        "label": "StudioError",
+        "type": "component"
+      },
+      {
+        "filePath": "app/page.tsx",
+        "id": "component:HomePage@app/page.tsx",
+        "label": "HomePage",
+        "type": "component"
+      },
+      {
+        "filePath": "features/creative-studio/LayerItem.tsx",
+        "id": "function:LayerItem@features/creative-studio/LayerItem.tsx",
+        "label": "LayerItem",
+        "type": "function"
+      },
+      {
+        "id": "external:unknown#handleSelect",
+        "label": "unknown · handleSelect",
+        "type": "external"
+      },
+      {
+        "id": "external:react#use",
+        "label": "react · use",
+        "type": "external"
+      },
+      {
+        "filePath": "hooks/useIsMobile.ts",
+        "id": "hook:useIsMobile@hooks/useIsMobile.ts",
+        "label": "useIsMobile",
+        "type": "hook"
+      },
+      {
+        "filePath": "hooks/useLayerSelection.ts",
+        "id": "hook:useLayerSelection@hooks/useLayerSelection.ts",
+        "label": "useLayerSelection",
+        "type": "hook"
+      },
+      {
+        "filePath": "hooks/useDebouncedValue.ts",
+        "id": "hook:useDebouncedValue@hooks/useDebouncedValue.ts",
+        "label": "useDebouncedValue",
+        "type": "hook"
+      },
+      {
+        "filePath": "hooks/useKeyboardShortcuts.ts",
+        "id": "hook:useKeyboardShortcuts@hooks/useKeyboardShortcuts.ts",
+        "label": "useKeyboardShortcuts",
+        "type": "hook"
+      },
+      {
+        "id": "builtin:Date.now",
+        "label": "Date.now",
+        "type": "builtin"
+      },
+      {
+        "id": "external:unknown#set",
+        "label": "unknown · set",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#get",
+        "label": "unknown · get",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#layers.filter",
+        "label": "unknown · layers.filter",
+        "type": "external"
+      },
+      {
+        "id": "builtin:Math.min",
+        "label": "Math.min",
+        "type": "builtin"
+      },
+      {
+        "id": "builtin:Math.max",
+        "label": "Math.max",
+        "type": "builtin"
+      },
+      {
+        "id": "external:unknown#state.layers.map",
+        "label": "unknown · state.layers.map",
+        "type": "external"
+      },
+      {
+        "id": "builtin:Date",
+        "label": "Date",
+        "type": "builtin"
+      },
+      {
+        "id": "external:unknown#layers",
+        "label": "unknown · layers",
+        "type": "external"
+      },
+      {
+        "id": "builtin:Math",
+        "label": "Math",
+        "type": "builtin"
+      },
+      {
+        "id": "external:unknown#state",
+        "label": "unknown · state",
+        "type": "external"
+      },
+      {
+        "filePath": "context/WorkspaceProvider.tsx",
+        "id": "component:WorkspaceProvider@context/WorkspaceProvider.tsx",
+        "label": "WorkspaceProvider",
+        "type": "component"
+      },
+      {
+        "filePath": "hooks/useCounter.ts",
+        "id": "hook:useCounter@hooks/useCounter.ts",
+        "label": "useCounter",
+        "type": "hook"
+      },
+      {
+        "filePath": "hooks/useToggle.ts",
+        "id": "hook:useToggle@hooks/useToggle.ts",
+        "label": "useToggle",
+        "type": "hook"
+      },
+      {
+        "id": "external:unknown#TOOLS.map",
+        "label": "unknown · TOOLS.map",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#tool.charAt(0).toUpperCase",
+        "label": "unknown · tool.charAt(0).toUpperCase",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#tool.slice",
+        "label": "unknown · tool.slice",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#selectTool",
+        "label": "unknown · selectTool",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#toolButtons.map",
+        "label": "unknown · toolButtons.map",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#TOOLS",
+        "label": "unknown · TOOLS",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#tool",
+        "label": "unknown · tool",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#toolButtons",
+        "label": "unknown · toolButtons",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#addLayer",
+        "label": "unknown · addLayer",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#layers.map",
+        "label": "unknown · layers.map",
+        "type": "external"
+      },
+      {
+        "filePath": "features/creative-studio/ProjectCard.tsx",
+        "id": "function:ProjectCard@features/creative-studio/ProjectCard.tsx",
+        "label": "ProjectCard",
+        "type": "function"
+      },
+      {
+        "filePath": "context/WorkspaceProvider.tsx",
+        "id": "function:WorkspaceContext@context/WorkspaceProvider.tsx",
+        "label": "WorkspaceContext",
+        "type": "function"
+      },
+      {
+        "filePath": "app/[locale]/studio/[projectId]/layout.tsx",
+        "id": "component:ProjectLayout@app/[locale]/studio/[projectId]/layout.tsx",
+        "label": "ProjectLayout",
+        "type": "component"
+      },
+      {
+        "id": "external:unknown#getProjects().find",
+        "label": "unknown · getProjects().find",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#getProjects()",
+        "label": "unknown · getProjects()",
+        "type": "external"
+      },
+      {
+        "filePath": "lib/creative-studio/getProjects.ts",
+        "id": "service:getProjects@lib/creative-studio/getProjects.ts",
+        "label": "getProjects",
+        "type": "service"
+      },
+      {
+        "filePath": "features/creative-studio/ProjectGrid.tsx",
+        "id": "component:ProjectGrid@features/creative-studio/ProjectGrid.tsx",
+        "label": "ProjectGrid",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/studio/page.tsx",
+        "id": "component:StudioPage@app/[locale]/studio/page.tsx",
+        "label": "StudioPage",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/studio/layout.tsx",
+        "id": "component:StudioLayout@app/[locale]/studio/layout.tsx",
+        "label": "StudioLayout",
+        "type": "component"
+      },
+      {
+        "filePath": "components/primitives/Badge.tsx",
+        "id": "component:Badge@components/primitives/Badge.tsx",
+        "label": "Badge",
+        "type": "component"
+      },
+      {
+        "filePath": "app/layout.tsx",
+        "id": "component:RootLayout@app/layout.tsx",
+        "label": "RootLayout",
+        "type": "component"
+      },
+      {
+        "id": "external:unknown#onSelect",
+        "label": "unknown · onSelect",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#onToggleVisibility",
+        "label": "unknown · onToggleVisibility",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#onToggleLock",
+        "label": "unknown · onToggleLock",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#window.matchMedia",
+        "label": "unknown · window.matchMedia",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#setIsMobile",
+        "label": "unknown · setIsMobile",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#onChange",
+        "label": "unknown · onChange",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#media.addEventListener",
+        "label": "unknown · media.addEventListener",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#media.removeEventListener",
+        "label": "unknown · media.removeEventListener",
+        "type": "external"
+      },
+      {
+        "id": "external:react#useState",
+        "label": "react · useState",
+        "type": "external"
+      },
+      {
+        "id": "external:react#useEffect",
+        "label": "react · useEffect",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#window",
+        "label": "unknown · window",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#media",
+        "label": "unknown · media",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#layers.find",
+        "label": "unknown · layers.find",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#layers.findIndex",
+        "label": "unknown · layers.findIndex",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#selectLayer",
+        "label": "unknown · selectLayer",
+        "type": "external"
+      },
+      {
+        "id": "builtin:setTimeout",
+        "label": "setTimeout",
+        "type": "builtin"
+      },
+      {
+        "id": "external:unknown#setDebounced",
+        "label": "unknown · setDebounced",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#clearTimeout",
+        "label": "unknown · clearTimeout",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#event.preventDefault",
+        "label": "unknown · event.preventDefault",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#selectNext",
+        "label": "unknown · selectNext",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#selectPrevious",
+        "label": "unknown · selectPrevious",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#window.addEventListener",
+        "label": "unknown · window.addEventListener",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#window.removeEventListener",
+        "label": "unknown · window.removeEventListener",
+        "type": "external"
+      },
+      {
+        "id": "external:react#useRef",
+        "label": "react · useRef",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#event",
+        "label": "unknown · event",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#resetStore",
+        "label": "unknown · resetStore",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#setCount",
+        "label": "unknown · setCount",
+        "type": "external"
+      },
+      {
+        "filePath": "components/dashboard/DashboardStats.tsx",
+        "id": "component:DashboardStats@components/dashboard/DashboardStats.tsx",
+        "label": "DashboardStats",
+        "type": "component"
+      },
+      {
+        "filePath": "hooks/useDashboardData.ts",
+        "id": "hook:useDashboardData@hooks/useDashboardData.ts",
+        "label": "useDashboardData",
+        "type": "hook"
+      },
+      {
+        "id": "external:unknown#setOn",
+        "label": "unknown · setOn",
+        "type": "external"
+      },
+      {
+        "filePath": "app/dashboard/settings/page.tsx",
+        "id": "component:SettingsPage@app/dashboard/settings/page.tsx",
+        "label": "SettingsPage",
+        "type": "component"
+      },
+      {
+        "filePath": "components/dashboard/StatTile.tsx",
+        "id": "component:StatTile@components/dashboard/StatTile.tsx",
+        "label": "StatTile",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/studio/[projectId]/loading.tsx",
+        "id": "component:ProjectLoading@app/[locale]/studio/[projectId]/loading.tsx",
+        "label": "ProjectLoading",
+        "type": "component"
+      },
+      {
+        "id": "external:unknown#projects.map",
+        "label": "unknown · projects.map",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#projects",
+        "label": "unknown · projects",
+        "type": "external"
+      },
+      {
+        "filePath": "app/[locale]/studio/loading.tsx",
+        "id": "component:StudioLoading@app/[locale]/studio/loading.tsx",
+        "label": "StudioLoading",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/layout.tsx",
+        "id": "component:LocaleLayout@app/[locale]/layout.tsx",
+        "label": "LocaleLayout",
+        "type": "component"
+      },
+      {
+        "filePath": "components/cards/InfoCard.tsx",
+        "id": "component:InfoCard@components/cards/InfoCard.tsx",
+        "label": "InfoCard",
+        "type": "component"
+      },
+      {
+        "filePath": "app/about/page.tsx",
+        "id": "component:AboutPage@app/about/page.tsx",
+        "label": "AboutPage",
+        "type": "component"
+      },
+      {
+        "filePath": "app/dashboard/layout.tsx",
+        "id": "component:DashboardLayout@app/dashboard/layout.tsx",
+        "label": "DashboardLayout",
+        "type": "component"
+      },
+      {
+        "id": "external:unknown#stats.map",
+        "label": "unknown · stats.map",
+        "type": "external"
+      },
+      {
+        "id": "external:unknown#stats",
+        "label": "unknown · stats",
+        "type": "external"
+      },
+      {
+        "filePath": "components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell@components/dashboard/DashboardShell.tsx",
+        "label": "DashboardShell",
+        "type": "component"
+      },
+      {
+        "filePath": "lib/dashboard/getStats.ts",
+        "id": "service:getStats@lib/dashboard/getStats.ts",
+        "label": "getStats",
+        "type": "service"
+      },
+      {
+        "filePath": "components/ui/skeleton.tsx",
+        "id": "component:Skeleton@components/ui/skeleton.tsx",
+        "label": "Skeleton",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/page.tsx",
+        "id": "component:LocaleHomePage@app/[locale]/page.tsx",
+        "label": "LocaleHomePage",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/blogs/[slug]/loading.tsx",
+        "id": "component:Loading@app/[locale]/blogs/[slug]/loading.tsx",
+        "label": "Loading",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/blogs/[slug]/error.tsx",
+        "id": "component:ErrorPage@app/[locale]/blogs/[slug]/error.tsx",
+        "label": "ErrorPage",
+        "type": "component"
+      },
+      {
+        "filePath": "app/[locale]/blogs/[slug]/page.tsx",
+        "id": "component:BlogDetailPage@app/[locale]/blogs/[slug]/page.tsx",
+        "label": "BlogDetailPage",
+        "type": "component"
+      },
+      {
+        "filePath": "components/primitives/Icon.tsx",
+        "id": "component:Icon@components/primitives/Icon.tsx",
+        "label": "Icon",
+        "type": "component"
+      },
+      {
+        "filePath": "app/dashboard/page.tsx",
+        "id": "component:DashboardPage@app/dashboard/page.tsx",
+        "label": "DashboardPage",
+        "type": "component"
+      }
+    ]
+  },
+  "id": "trace_WorkspaceShell",
+  "query": "Trace component WorkspaceShell",
+  "relatedFiles": [
+    "features/creative-studio/StudioProjectView.tsx",
+    "features/creative-studio/StudioToolbar.tsx",
+    "features/creative-studio/WorkspaceCanvas.tsx",
+    "features/creative-studio/WorkspaceShell.tsx",
+    "features/creative-studio/WorkspaceSidebar.tsx"
+  ],
+  "relatedSymbols": [
+    "component:WorkspaceShell@features/creative-studio/WorkspaceShell.tsx",
+    "StudioToolbar",
+    "WorkspaceSidebar",
+    "WorkspaceCanvas",
+    "StudioProjectView"
+  ],
+  "sections": {
+    "boundary": ["boundary: client component (\"use client\")"],
+    "entry": [
+      "WorkspaceShell — features/creative-studio/WorkspaceShell.tsx:8-18",
+      "props: none",
+      "signature: export function WorkspaceShell() {"
+    ],
+    "hooks": ["none"],
+    "related": [
+      "features/creative-studio/StudioProjectView.tsx",
+      "features/creative-studio/StudioToolbar.tsx",
+      "features/creative-studio/WorkspaceCanvas.tsx",
+      "features/creative-studio/WorkspaceShell.tsx",
+      "features/creative-studio/WorkspaceSidebar.tsx"
+    ],
+    "renderTree": [
+      "├── StudioToolbar (features/creative-studio/StudioToolbar.tsx:12-37)",
+      "│   ├── BadgeCompact (features/creative-studio/StudioToolbar.tsx:39-41)",
+      "│   ├── Separator (components/ui/separator.tsx:4-6)",
+      "│   └── Button (components/ui/button.tsx:10-27)",
+      "├── WorkspaceSidebar (features/creative-studio/WorkspaceSidebar.tsx:7-14)",
+      "│   ├── ToolPalette (features/creative-studio/ToolPalette.tsx:17-50)",
+      "│   │   └── Button (components/ui/button.tsx:10-27)",
+      "│   └── LayerList (features/creative-studio/LayerList.tsx:12-44)",
+      "│       ├── Separator (components/ui/separator.tsx:4-6)",
+      "│       ├── Button (components/ui/button.tsx:10-27)",
+      "│       └── LayerItem (features/creative-studio/LayerItem.tsx:18-54)",
+      "└── WorkspaceCanvas (features/creative-studio/WorkspaceCanvas.tsx:15-46)",
+      "    ├── Card (components/ui/card.tsx:4-14)",
+      "    ├── CardHeader (components/ui/card.tsx:16-25)",
+      "    ├── CardTitle (components/ui/card.tsx:27-36)",
+      "    ├── Badge (components/ui/badge.tsx:9-15)",
+      "    └── CardContent (components/ui/card.tsx:38-47)"
+    ],
+    "usage": [
+      "direct consumers:",
+      "  - StudioProjectView (features/creative-studio/StudioProjectView.tsx:11-17)",
+      "routes affected: none detected"
+    ]
+  },
+  "steps": [
+    "Entry: features/creative-studio/WorkspaceShell.tsx:8-18",
+    "Props: none",
+    "Passes props: none",
+    "Receives props: none",
+    "Call chain: none",
+    "Dynamic imports: none",
+    "Uses hooks: none",
+    "Used by: StudioProjectView"
+  ],
+  "summary": "WorkspaceShell is a component at features/creative-studio/WorkspaceShell.tsx:8-18. Used by 1 direct consumer(s); affects 0 route(s).",
+  "type": "component_trace",
+  "warnings": []
+}

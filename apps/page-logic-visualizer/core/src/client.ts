@@ -1,0 +1,182 @@
+/**
+ * Client-safe exports — no Node.js APIs or ts-morph.
+ * Use this entry from "use client" components; keep the main package for API routes.
+ */
+export {
+  isStoreBackedLocal,
+  isStoreHook,
+  resolveStoreLibrary,
+} from "./analyzer/analyzeDataSources";
+export {
+  buildDataFlowLayers,
+  getDataFlowEdges,
+  getDownstreamNodes,
+  getNodeFlowSummary,
+  getUpstreamNodes,
+} from "./graph/dataFlow";
+export type { DataFlowLayer } from "./graph/dataFlow";
+export {
+  buildFocusDiagram,
+  buildNodeContext,
+  buildTraceStepGroups,
+  collectPropPassThroughSteps,
+  getAncestorVisibilityConditions,
+  resolveCallSitePropExpression,
+  resolveConsumerAnchorId,
+  resolveExpressionToNode,
+  resolveImmediatePropExpression,
+  resolveImmediatePropLoc,
+  resolvePropDataExpression,
+  traceDownstream,
+  traceIdentifier,
+  traceUpstream,
+} from "./graph/trace";
+export type {
+  DataSourceTrace,
+  FocusDiagram,
+  NodeContextView,
+  PropPassThroughStep,
+  PropTrace,
+  RenderChild,
+  TraceGroupKind,
+  TraceLink,
+  TraceRole,
+  TraceStep,
+  TraceStepGroup,
+  VisibilityCondition,
+} from "./graph/trace";
+export {
+  buildFunctionBodyFlowGraph,
+  buildLinearPropFlowGraph,
+  buildPropExecutionFlowGraph,
+  findPropFlowGraphNodeById,
+  mergeExecutionFlowWithDownstream,
+} from "./graph/propExecutionFlow";
+export type { PropFlowGraphNode } from "./graph/propExecutionFlow";
+export { hookFlowStepsToPropFlowGraph } from "./graph/hookFlowToPropFlow";
+export {
+  collectHookAutoExpandIds,
+  hookTraceViewToNestedPropFlowGraph,
+  hookTraceViewToPropFlowGraph,
+  isFunctionReturnExpression,
+} from "./graph/hookTraceViewFlow";
+export {
+  graphNodeMatchesHookCallName,
+  hookCallNameFromGraphNode,
+} from "./utils/hookNodeNames";
+export {
+  buildDataTraceChain,
+  buildUiTree,
+  collectUiDescendantIds,
+  findUiTreeNode,
+  findUiTreeNodePath,
+  flattenUiTree,
+  isUiGraphNode,
+} from "./graph/uiGraph";
+export type {
+  BuildUiTreeOptions,
+  DataTraceBuildOptions,
+  DataTraceChain,
+  DataTraceHookTraceAction,
+  DataTraceStep,
+  DataTraceStepRole,
+  UiDataItem,
+  UiGateCondition,
+  UiHtmlVisibilityMode,
+  UiRenderItem,
+  UiTreeNode,
+} from "./graph/uiGraph";
+export {
+  collapseGraphExpansion,
+  isNodeExpandable,
+  mergeGraphExpansion,
+} from "./graph/mergeGraph";
+export type { MergeGraphOptions } from "./graph/mergeGraph";
+export {
+  buildAllTraceLayers,
+  buildDataFlowTrace,
+  buildDataSourceTrace,
+  buildDependencyTrace,
+  buildEventActionTrace,
+  buildStateStoreTrace,
+  filterTraceLayerGraph,
+} from "./graph/traceLayers";
+export type { DataFlowTraceOptions } from "./graph/traceLayers";
+export { searchGraph } from "./search/indexGraph";
+export type { SearchGraphOptions, SearchScope } from "./search/indexGraph";
+export type {
+  AnalyzePageFileOptions,
+  AnalyzeRouteOptions,
+  AnalyzerConfig,
+  AnalyzerWarning,
+  ConditionMeta,
+  ContextMeta,
+  DataFetchMeta,
+  ExecutionFlowBranch,
+  ExecutionFlowBranchKind,
+  ExecutionFlowKind,
+  ExecutionFlowStep,
+  DataSourceKind,
+  DataValueKind,
+  HookIOField,
+  HookMeta,
+  HookReturnFieldTrace,
+  HookAssignmentTrace,
+  HookInternalEntry,
+  HookTraceGraph,
+  HookTraceGraphEdge,
+  HookTraceGraphNode,
+  HookTraceView,
+  HookTraceScope,
+  HookUsage,
+  ReturnLineage,
+  TraceTarget,
+  TraceWarning,
+  HookInputTrace,
+  HookFlowStep,
+  HookFlowStepKind,
+  EffectHookTrace,
+  EffectHookWarning,
+  EffectHookWarningKind,
+  ImportInfo,
+  LayoutDataSourceTrace,
+  LayoutDependencyTrace,
+  LayoutDiagnostic,
+  LayoutGuardTrace,
+  LayoutMetadataTrace,
+  LayoutPropTrace,
+  LayoutProviderTrace,
+  LayoutRenderTrace,
+  LayoutSegmentConfigTrace,
+  LayoutSlotTrace,
+  LayoutTrace,
+  NodeCategory,
+  UiContentMeta,
+  UiLocalItem,
+  UiLocalsMeta,
+  LogicGraphEdge,
+  LogicGraphEdgeType,
+  LogicGraphNode,
+  LogicGraphNodeType,
+  LoopMeta,
+  PageLogicGraph,
+  PageLogicVisualizerConfig,
+  PropUsage,
+  ResolvedRouteFile,
+  RouteChainEntry,
+  RouteTraceMode,
+  TraceLayer,
+  TraceLayerEdge,
+  TraceLayerGraph,
+  TraceLayerNode,
+  GraphSearchResult,
+  SearchResultKind,
+  StoreLibrary,
+  StoreMeta,
+  StoreFieldWriterTrace,
+  StoreWriteContext,
+  StoreWriteSite,
+  ResolveRouteOptions,
+  SourceFileMeta,
+  SourceLocation,
+} from "./types";

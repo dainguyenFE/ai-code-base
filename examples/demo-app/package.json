@@ -2,5 +2,8 @@
   "name": "demo-app",
   "version": "0.0.1",
   "private": true,
-  "description": "Sample Next.js-like app for testing ai-trace"
+  "description": "Sample Next.js-like app for testing ai-trace",
+  "dependencies": {
+    "zustand": "^5.0.5"
+  }
 }

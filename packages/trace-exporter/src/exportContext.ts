@@ -1,12 +1,9 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+
 import type { TraceDatabase } from "@ai-trace/cache";
-import {
-  loadGraph,
-  loadRoutes,
-  loadSymbols,
-  type DbSymbol,
-} from "@ai-trace/cache";
+import { loadGraph, loadRoutes, loadSymbols } from "@ai-trace/cache";
+import type { DbSymbol } from "@ai-trace/cache";
 
 function renderComponentMap(symbols: DbSymbol[]): string {
   const components = symbols.filter((s) => s.type === "component");
@@ -78,12 +75,18 @@ function renderRouteMap(routes: ReturnType<typeof loadRoutes>): string {
 
   for (const route of routes) {
     lines.push(`## ${route.path}`, "");
-    if (route.pageFile) lines.push(`- page: ${route.pageFile}`);
+    if (route.pageFile) {
+      lines.push(`- page: ${route.pageFile}`);
+    }
     for (const layout of route.layoutFiles) {
       lines.push(`- layout: ${layout}`);
     }
-    if (route.loadingFile) lines.push(`- loading: ${route.loadingFile}`);
-    if (route.errorFile) lines.push(`- error: ${route.errorFile}`);
+    if (route.loadingFile) {
+      lines.push(`- loading: ${route.loadingFile}`);
+    }
+    if (route.errorFile) {
+      lines.push(`- error: ${route.errorFile}`);
+    }
     lines.push("");
   }
 
@@ -138,7 +141,7 @@ export async function exportContext(
   const routes = loadRoutes(db);
   const graph = loadGraph(db);
 
-  const outputs: Array<[string, string]> = [
+  const outputs: [string, string][] = [
     ["ai-context.md", renderAiContext(symbols, routes)],
     ["component-map.md", renderComponentMap(symbols)],
     ["hook-map.md", renderHookMap(symbols)],
@@ -149,14 +152,14 @@ export async function exportContext(
       JSON.stringify(
         {
           symbols: symbols.map((s) => ({
+            endLine: s.endLine,
+            file: s.filePath,
             id: s.id,
             name: s.name,
-            type: s.type,
-            file: s.filePath,
-            startLine: s.startLine,
-            endLine: s.endLine,
             props: s.props,
             renders: s.renders,
+            startLine: s.startLine,
+            type: s.type,
             usesHooks: s.usesHooks,
           })),
         },
@@ -171,7 +174,7 @@ export async function exportContext(
 
   for (const [fileName, content] of outputs) {
     const filePath = path.join(exportDir, fileName);
-    await writeFile(filePath, content + "\n", "utf-8");
+    await writeFile(filePath, `${content}\n`, "utf-8");
     written.push(filePath);
   }
 

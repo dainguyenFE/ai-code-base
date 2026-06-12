@@ -3,9 +3,7 @@
   "query": "Trace BlogDetail",
   "type": "component_trace",
   "summary": "BlogDetail is a component in components/blog/BlogDetail.tsx.",
-  "entryPoints": [
-    "components/blog/BlogDetail.tsx"
-  ],
+  "entryPoints": ["components/blog/BlogDetail.tsx"],
   "relatedFiles": [
     "components/blog/BlogDetail.tsx",
     "app/[locale]/blogs/[slug]/page.tsx"

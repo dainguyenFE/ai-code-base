@@ -1,0 +1,59 @@
+{
+  "createdAt": "2026-06-09T08:07:50.623Z",
+  "entryPoints": ["components/primitives/Badge.tsx"],
+  "graph": {
+    "edges": [
+      {
+        "id": "component:HomePage->component:Badge:renders",
+        "from": "component:HomePage",
+        "to": "component:Badge",
+        "type": "renders"
+      },
+      {
+        "id": "component:InfoCard->component:Badge:renders",
+        "from": "component:InfoCard",
+        "to": "component:Badge",
+        "type": "renders"
+      },
+      {
+        "id": "component:StatTile->component:Badge:renders",
+        "from": "component:StatTile",
+        "to": "component:Badge",
+        "type": "renders"
+      },
+      {
+        "id": "route:/->component:Badge:routes_to",
+        "from": "route:/",
+        "to": "component:Badge",
+        "type": "routes_to"
+      }
+    ],
+    "nodes": [
+      {
+        "filePath": "components/primitives/Badge.tsx",
+        "id": "component:Badge",
+        "label": "Badge",
+        "type": "component"
+      }
+    ]
+  },
+  "id": "trace_Badge",
+  "query": "Trace Badge",
+  "relatedFiles": [
+    "components/primitives/Badge.tsx",
+    "app/page.tsx",
+    "components/cards/InfoCard.tsx",
+    "components/dashboard/StatTile.tsx"
+  ],
+  "relatedSymbols": ["component:Badge"],
+  "steps": [
+    "Entry: components/primitives/Badge.tsx",
+    "Props: label",
+    "Renders: none",
+    "Uses hooks: none",
+    "Used by routes: app/page.tsx"
+  ],
+  "summary": "Badge is a component in components/primitives/Badge.tsx.",
+  "type": "component_trace",
+  "warnings": []
+}

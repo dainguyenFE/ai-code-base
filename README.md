@@ -31,14 +31,20 @@ bun ../../apps/cli/src/index.ts index
 # Export context for AI/Cursor
 bun ../../apps/cli/src/index.ts export
 
-# Trace a component
+# Trace a component (graph only)
 bun ../../apps/cli/src/index.ts trace component BlogDetail
+
+# Trace with AI explanation (Ollama local or OpenAI)
+bun ../../apps/cli/src/index.ts trace component BlogDetail --ai
+bun ../../apps/cli/src/index.ts ask "trace component BlogDetail"
 
 # Trace a route
 bun ../../apps/cli/src/index.ts trace route "/[locale]/blogs/[slug]"
 
-# Generate Cursor rules
+# Generate agent rules (Cursor + Copilot + AGENTS.md) — one consolidated source
 bun ../../apps/cli/src/index.ts cursor init
+# or from parent repo root:
+# bun run trace -- agents
 ```
 
 From repo root:
@@ -52,7 +58,8 @@ bun run ai-trace export
 ## Project structure
 
 ```txt
-apps/cli/              CLI entry point
+apps/cli/                    CLI entry point
+apps/page-logic-visualizer/  Next.js page logic visualizer UI + analyzer
 packages/
   trace-types/         Shared types
   trace-config/        Config load/validate
@@ -83,14 +90,56 @@ After `index` + `export`:
     routes.json
 ```
 
+## Examples
+
+Progressive examples (leaf component → hook → route → full stack) live in the parent repo:
+
+**[`docs/agents/code-trace-examples.md`](../../docs/agents/code-trace-examples.md)**
+
+Practice symbols in this monorepo: `Bell`, `Home`, `useSidebar`, `useIsMobile`, `CreativeStudioHome`.
+
+**Progressive demo app** (`examples/demo-app/TRACE_EXAMPLES.md`):
+
+| Kind      | L1        | L2         | L3              | L4                    | L5             | L6                       |
+| --------- | --------- | ---------- | --------------- | --------------------- | -------------- | ------------------------ |
+| Component | Badge     | InfoCard   | StatTile        | DashboardStats        | DashboardShell | BlogDetail               |
+| Hook      | useToggle | useCounter | useRelatedPosts | useDashboardData      | —              | —                        |
+| Route     | `/`       | `/about`   | `/dashboard`    | `/dashboard/settings` | `/[locale]`    | `/[locale]/blogs/[slug]` |
+
+From parent repo: `bun run trace -- demo:index` then trace with `AI_TRACE_ROOT=tools/ai-code-trace-agent/examples/demo-app`.
+
 ## MVP commands
 
-| Command | Description |
-|---------|-------------|
-| `ai-trace init` | Create `.ai-trace/config.json` |
-| `ai-trace index` | Scan → parse → graph → SQLite |
-| `ai-trace export` | Export markdown/json for AI |
-| `ai-trace trace component <name>` | Trace component flow |
-| `ai-trace trace route <path>` | Trace route flow |
-| `ai-trace trace hook <name>` | Trace hook usage |
-| `ai-trace cursor init` | Generate `.cursor/rules` |
+| Command                                | Description                            |
+| -------------------------------------- | -------------------------------------- |
+| `ai-trace init`                        | Create `.ai-trace/config.json`         |
+| `ai-trace index`                       | Scan → parse → graph → SQLite          |
+| `ai-trace export`                      | Export markdown/json for AI            |
+| `ai-trace trace component <name>`      | Trace component flow                   |
+| `ai-trace trace component <name> --ai` | AI explanation from index              |
+| `ai-trace ask "<query>"`               | Natural-language trace (AI)            |
+| `ai-trace trace route <path>`          | Trace route flow                       |
+| `ai-trace trace hook <name>`           | Trace hook usage                       |
+| `ai-trace cursor init`                 | Generate agent rules (all targets)     |
+| `trace:agents` (parent repo)           | Same — Cursor, Copilot, `docs/agents/` |
+
+## AI config
+
+Add to `.ai-trace/config.json`:
+
+```json
+{
+  "ai": {
+    "enabled": true,
+    "provider": "ollama",
+    "model": "qwen2.5-coder:7b",
+    "baseUrl": "http://localhost:11434",
+    "temperature": 0.1,
+    "maxContextFiles": 8,
+    "maxGraphDepth": 2,
+    "saveTraceResult": true
+  }
+}
+```
+
+For OpenAI, set `"provider": "openai"`, `"model": "gpt-4.1-mini"`, and `OPENAI_API_KEY` in `.env.local`.

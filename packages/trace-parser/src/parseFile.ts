@@ -1,12 +1,3 @@
-import {
-  Node,
-  Project,
-  type ArrowFunction,
-  type FunctionDeclaration,
-  type ParameterDeclaration,
-  type SourceFile,
-  type VariableDeclaration,
-} from "ts-morph";
 import type {
   ImportInfo,
   ParsedFile,
@@ -14,6 +5,25 @@ import type {
   SymbolInfo,
   SymbolType,
 } from "@ai-trace/types";
+import { Node, Project } from "ts-morph";
+import type {
+  ArrowFunction,
+  FunctionDeclaration,
+  ParameterDeclaration,
+  SourceFile,
+  VariableDeclaration,
+} from "ts-morph";
+
+import { collectCallSites, collectPropFlows } from "./collectDataFlow.js";
+import {
+  buildExecutionSteps,
+  collectRenderSites,
+  collectRendersFromSites,
+} from "./collectExecutionSteps.js";
+import {
+  collectDynamicImports,
+  collectPassedProps,
+} from "./collectJsxMetadata.js";
 import {
   hashText,
   isHookName,
@@ -24,10 +34,10 @@ import {
 
 function collectImports(sourceFile: SourceFile): ImportInfo[] {
   return sourceFile.getImportDeclarations().map((decl) => ({
-    source: decl.getModuleSpecifierValue(),
-    named: decl.getNamedImports().map((item) => item.getName()),
     defaultImport: decl.getDefaultImport()?.getText(),
     isTypeOnly: decl.isTypeOnly(),
+    named: decl.getNamedImports().map((item) => item.getName()),
+    source: decl.getModuleSpecifierValue(),
   }));
 }
 
@@ -53,7 +63,9 @@ function hasJsxReturn(node: Node): boolean {
   return false;
 }
 
-function getFunctionBody(node: FunctionDeclaration | ArrowFunction | VariableDeclaration): string {
+function getFunctionBody(
+  node: FunctionDeclaration | ArrowFunction | VariableDeclaration
+): string {
   if (Node.isVariableDeclaration(node)) {
     const init = node.getInitializer();
     return init?.getText() ?? node.getText();
@@ -70,15 +82,22 @@ function extractProps(
     params = node.getParameters();
   } else if (Node.isVariableDeclaration(node)) {
     const init = node.getInitializer();
-    if (init && (Node.isArrowFunction(init) || Node.isFunctionExpression(init))) {
+    if (
+      init &&
+      (Node.isArrowFunction(init) || Node.isFunctionExpression(init))
+    ) {
       params = init.getParameters();
     }
   }
 
-  if (params.length === 0) return [];
+  if (params.length === 0) {
+    return [];
+  }
 
   const first = params[0];
-  if (!first) return [];
+  if (!first) {
+    return [];
+  }
 
   const nameNode = first.getNameNode();
   if (Node.isObjectBindingPattern(nameNode)) {
@@ -91,34 +110,32 @@ function extractProps(
   return [first.getName()];
 }
 
+function calleeName(expr: Node): string | null {
+  if (Node.isIdentifier(expr)) {
+    return expr.getText();
+  }
+
+  if (Node.isPropertyAccessExpression(expr)) {
+    const object = expr.getExpression().getText();
+    const property = expr.getName();
+    return `${object}.${property}`;
+  }
+
+  return null;
+}
+
 function collectCalls(node: Node): string[] {
   const calls = new Set<string>();
 
-  node.forEachDescendant((child) => {
-    if (Node.isCallExpression(child)) {
-      const expr = child.getExpression();
-      if (Node.isIdentifier(expr)) {
-        calls.add(expr.getText());
-      }
+  for (const site of collectCallSites(node)) {
+    calls.add(site.callee);
+    const root = site.callee.split(".")[0];
+    if (root) {
+      calls.add(root);
     }
-  });
+  }
 
   return [...calls];
-}
-
-function collectRenders(node: Node): string[] {
-  const renders = new Set<string>();
-
-  node.forEachDescendant((child) => {
-    if (Node.isJsxOpeningElement(child) || Node.isJsxSelfClosingElement(child)) {
-      const tag = child.getTagNameNode().getText();
-      if (isPascalCase(tag)) {
-        renders.add(tag);
-      }
-    }
-  });
-
-  return [...renders];
 }
 
 function collectHookUsage(node: Node): string[] {
@@ -141,11 +158,15 @@ function classifySymbol(
   body: Node,
   filePath: string
 ): SymbolType {
-  if (isHookName(name)) return "hook";
+  if (isHookName(name)) {
+    return "hook";
+  }
   if (isJsxFile(filePath) && isPascalCase(name) && hasJsxReturn(body)) {
     return "component";
   }
-  if (name.startsWith("get") || name.startsWith("fetch")) return "service";
+  if (name.startsWith("get") || name.startsWith("fetch")) {
+    return "service";
+  }
   return "function";
 }
 
@@ -159,19 +180,31 @@ function buildSymbol(
 ): SymbolInfo {
   const bodyText = bodyNode.getText();
 
+  const callSites = collectCallSites(bodyNode);
+  const renderSites = collectRenderSites(bodyNode);
+  const executionSteps = buildExecutionSteps(bodyNode);
+
   return {
-    id: makeSymbolId(type, name),
-    name,
-    type,
-    filePath,
-    startLine,
-    endLine,
-    signature: bodyText.split("\n")[0]?.slice(0, 120),
-    props: type === "component" ? extractProps(bodyNode as never) : undefined,
+    callSites,
     calls: collectCalls(bodyNode),
-    renders: type === "component" ? collectRenders(bodyNode) : undefined,
-    usesHooks: collectHookUsage(bodyNode),
+    dynamicImports: collectDynamicImports(bodyNode),
+    endLine,
+    executionSteps: executionSteps.length > 0 ? executionSteps : undefined,
+    filePath,
     hash: hashText(bodyText),
+    id: makeSymbolId(type, name, filePath),
+    name,
+    passedProps:
+      type === "component" ? collectPassedProps(bodyNode) : undefined,
+    propFlows: type === "component" ? collectPropFlows(bodyNode) : undefined,
+    props: type === "component" ? extractProps(bodyNode as never) : undefined,
+    renderSites: renderSites.length > 0 ? renderSites : undefined,
+    renders:
+      renderSites.length > 0 ? collectRendersFromSites(renderSites) : undefined,
+    signature: bodyText.split("\n")[0]?.slice(0, 120),
+    startLine,
+    type,
+    usesHooks: collectHookUsage(bodyNode),
   };
 }
 
@@ -201,19 +234,29 @@ function parseVariable(
 ) {
   const name = decl.getName();
   const init = decl.getInitializer();
-  if (!init) return;
-
-  if (!Node.isArrowFunction(init) && !Node.isFunctionExpression(init)) {
+  if (!init) {
     return;
   }
 
-  const type = classifySymbol(name, init, filePath);
+  let bodyNode: Node;
+  let type: SymbolType;
+
+  if (Node.isArrowFunction(init) || Node.isFunctionExpression(init)) {
+    bodyNode = init;
+    type = classifySymbol(name, init, filePath);
+  } else if (Node.isCallExpression(init)) {
+    bodyNode = init;
+    type = "function";
+  } else {
+    return;
+  }
+
   symbols.push(
     buildSymbol(
       name,
       type,
       filePath,
-      init,
+      bodyNode,
       decl.getStartLineNumber(),
       decl.getEndLineNumber()
     )
@@ -222,19 +265,19 @@ function parseVariable(
 
 export function parseFile(file: ScannedFile): ParsedFile {
   const project = new Project({
-    useInMemoryFileSystem: true,
     compilerOptions: {
-      jsx: 4,
       allowJs: true,
+      jsx: 4,
       target: 99,
     },
+    useInMemoryFileSystem: true,
   });
 
   const sourceFile = project.createSourceFile(file.path, file.content, {
     overwrite: true,
   });
 
-  const content = file.content;
+  const { content } = file;
   const isClientComponent =
     content.includes('"use client"') || content.includes("'use client'");
   const isServerComponent =
@@ -247,11 +290,11 @@ export function parseFile(file: ScannedFile): ParsedFile {
   for (const [name, declarations] of collectExports(sourceFile)) {
     for (const decl of declarations) {
       exports.push({
-        name,
         isDefault: name === "default",
         isTypeOnly:
           Node.isTypeAliasDeclaration(decl) ||
           Node.isInterfaceDeclaration(decl),
+        name,
       });
 
       if (Node.isFunctionDeclaration(decl) && decl.getName()) {
@@ -264,30 +307,59 @@ export function parseFile(file: ScannedFile): ParsedFile {
 
   for (const fn of sourceFile.getFunctions()) {
     const name = fn.getName();
-    if (!name || symbols.some((s) => s.name === name)) continue;
+    if (!name || symbols.some((s) => s.name === name)) {
+      continue;
+    }
     parseFunctionLike(name, fn, file.path, symbols);
   }
 
   for (const statement of sourceFile.getVariableStatements()) {
     for (const decl of statement.getDeclarations()) {
       const name = decl.getName();
-      if (symbols.some((s) => s.name === name)) continue;
+      if (symbols.some((s) => s.name === name)) {
+        continue;
+      }
       parseVariable(decl, file.path, symbols);
     }
   }
 
+  const fileLevelDynamicImports = collectDynamicImports(sourceFile);
+  const defaultExportNames = new Set(
+    exports.filter((item) => item.isDefault).map((item) => item.name)
+  );
+
   for (const symbol of symbols) {
     symbol.isClientComponent = isClientComponent;
     symbol.isServerComponent = isServerComponent;
+
+    const isDefaultExportComponent =
+      symbol.type === "component" &&
+      (defaultExportNames.has(symbol.name) ||
+        defaultExportNames.has("default"));
+
+    if (!isDefaultExportComponent || fileLevelDynamicImports.length === 0) {
+      continue;
+    }
+
+    const existingLines = new Set(
+      (symbol.dynamicImports ?? []).map((item) => item.line)
+    );
+    const merged = fileLevelDynamicImports.filter(
+      (item) => !existingLines.has(item.line)
+    );
+
+    if (merged.length > 0) {
+      symbol.dynamicImports = [...(symbol.dynamicImports ?? []), ...merged];
+    }
   }
 
   return {
+    exports,
     filePath: file.path,
     imports,
-    exports,
-    symbols,
     isClientComponent,
     isServerComponent,
+    symbols,
   };
 }
 

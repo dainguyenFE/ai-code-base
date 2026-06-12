@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@ai-trace/parser": "workspace:*",
     "@ai-trace/types": "workspace:*"
   },
   "devDependencies": {

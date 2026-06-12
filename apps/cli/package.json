@@ -2,10 +2,10 @@
   "name": "@ai-trace/cli",
   "version": "0.0.1",
   "private": true,
-  "type": "module",
   "bin": {
     "ai-trace": "./dist/index.js"
   },
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit"

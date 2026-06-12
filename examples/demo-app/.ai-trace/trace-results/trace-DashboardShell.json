@@ -1,0 +1,74 @@
+{
+  "createdAt": "2026-06-09T08:07:50.932Z",
+  "entryPoints": ["components/dashboard/DashboardShell.tsx"],
+  "graph": {
+    "edges": [
+      {
+        "id": "component:DashboardShell->component:InfoCard:renders",
+        "from": "component:DashboardShell",
+        "to": "component:InfoCard",
+        "type": "renders"
+      },
+      {
+        "id": "component:DashboardShell->component:DashboardStats:renders",
+        "from": "component:DashboardShell",
+        "to": "component:DashboardStats",
+        "type": "renders"
+      },
+      {
+        "id": "component:DashboardShell->hook:useDashboardData:uses_hook",
+        "from": "component:DashboardShell",
+        "to": "hook:useDashboardData",
+        "type": "uses_hook"
+      },
+      {
+        "id": "component:DashboardShell->hook:useDashboardData:calls",
+        "from": "component:DashboardShell",
+        "to": "hook:useDashboardData",
+        "type": "calls"
+      },
+      {
+        "id": "component:DashboardPage->component:DashboardShell:renders",
+        "from": "component:DashboardPage",
+        "to": "component:DashboardShell",
+        "type": "renders"
+      },
+      {
+        "id": "route:/dashboard->component:DashboardShell:routes_to",
+        "from": "route:/dashboard",
+        "to": "component:DashboardShell",
+        "type": "routes_to"
+      }
+    ],
+    "nodes": [
+      {
+        "filePath": "components/dashboard/DashboardShell.tsx",
+        "id": "component:DashboardShell",
+        "label": "DashboardShell",
+        "type": "component"
+      }
+    ]
+  },
+  "id": "trace_DashboardShell",
+  "query": "Trace DashboardShell",
+  "relatedFiles": [
+    "components/dashboard/DashboardShell.tsx",
+    "app/dashboard/page.tsx"
+  ],
+  "relatedSymbols": [
+    "component:DashboardShell",
+    "InfoCard",
+    "DashboardStats",
+    "useDashboardData"
+  ],
+  "steps": [
+    "Entry: components/dashboard/DashboardShell.tsx",
+    "Props: none",
+    "Renders: InfoCard, DashboardStats",
+    "Uses hooks: useDashboardData",
+    "Used by routes: app/dashboard/page.tsx"
+  ],
+  "summary": "DashboardShell is a component in components/dashboard/DashboardShell.tsx.",
+  "type": "component_trace",
+  "warnings": []
+}

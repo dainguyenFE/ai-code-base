@@ -8,14 +8,15 @@ const packages = [
   "packages/trace-exporter",
   "packages/trace-agent",
   "apps/cli",
+  "apps/page-logic-visualizer",
 ];
 
 for (const pkg of packages) {
   console.log(`Typechecking ${pkg}...`);
   const proc = Bun.spawn(["bun", "run", "typecheck"], {
     cwd: pkg,
-    stdout: "inherit",
     stderr: "inherit",
+    stdout: "inherit",
   });
   const code = await proc.exited;
   if (code !== 0) {

@@ -11,7 +11,9 @@
   "scripts": {
     "build": "bun run scripts/build-all.ts",
     "typecheck": "bun run scripts/typecheck-all.ts",
-    "ai-trace": "bun apps/cli/src/index.ts"
+    "ai-trace": "bun apps/cli/src/index.ts",
+    "page-logic-visualizer": "bun --cwd apps/page-logic-visualizer dev",
+    "dev:page-logic-visualizer": "bun --cwd apps/page-logic-visualizer dev"
   },
   "devDependencies": {
     "@types/bun": "latest",
